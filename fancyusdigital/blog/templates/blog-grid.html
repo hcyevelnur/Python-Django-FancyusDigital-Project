@@ -1,0 +1,357 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<section class="main-inner-banner-one">
+    <div class="blur-1">
+        <img src="{% static 'images/Blur_1.png' %}" alt="bg blur">
+    </div>
+    <div class="blur-2">
+        <img src="{% static 'images/Blur_2.png' %}" alt="bg blur">
+    </div>
+    <div class="banner-one-shape1 animate-this wow fadeIn" data-wow-delay=".7s"></div>
+    <div class="banner-one-shape2 animate-this wow fadeIn" data-wow-delay=".9s"></div>
+    <div class="banner-one-shape3 animate-this wow fadeIn" data-wow-delay="1s"></div>
+    <div class="banner-one-shape4">
+        <img src="{% static 'images/banner-inner-shape-one.png' %}" alt="shap">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="breadcrum-title-one">
+                    <h1 class="h1-title">Blog Gride</h1>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="main-blog-grid-in-one">
+    <div class="blog-grid-shape1-one">
+        <img src="{% static 'images/blog-grid-shape1-one.png' %}" alt="Shape">
+    </div>
+    <div class="blog-grid-shape2-one">
+        <img src="{% static 'images/blog-grid-shape2-one.png' %}" alt="Shape">
+    </div>
+    <div class="blog-grid-shape3-one">
+        <img src="{% static 'images/blog-grid-shape1-one.png' %}" alt="Shape">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="blog-box-one wow fadeInUp" data-wow-delay=".4s">
+                    <div class="blog-img-one">
+                        <img src="{% static 'images/blog1-one.jpg' %}" alt="Blog">
+                        <div class="blog-tag-one">
+                            <a href="javascript:void(0);">SEO</a>
+                        </div>
+                    </div>
+                    <div class="blog-box-content-one">
+                        <div class="blog-date-author-one">
+                            <div class="blog-date-one">
+                                <div class="blog-circle-one"></div>
+                                <a href="javascript:void(0);">7 March 2021</a>
+                            </div>
+                            <div class="blog-author-one">
+                                <div class="blog-circle-one"></div>
+                                <a href="javascript:void(0);">By Developers</a>
+                            </div>
+                        </div>
+                        <a href="{% url 'blog-detail' %}"><h3 class="h3-title">6 Ways to Find If Your Sites Been Hacked</h3></a>
+                        <a href="{% url 'blog-detail' %}" class="btn-link-one">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="blog-box-one wow fadeInDown" data-wow-delay=".5s">
+                    <div class="blog-img-one">
+                        <img src="{% static 'images/blog2-one.jpg' %}" alt="Blog">
+                        <div class="blog-tag-one">
+                            <a href="javascript:void(0);">Marketing</a>
+                        </div>
+                    </div>
+                    <div class="blog-box-content-one">
+                        <div class="blog-date-author-one">
+                            <div class="blog-date-one">
+                                <div class="blog-circle-one"></div>
+                                <a href="javascript:void(0);">7 March 2021</a>
+                            </div>
+                            <div class="blog-author-one">
+                                <div class="blog-circle-one"></div>
+                                <a href="javascript:void(0);">By Developers</a>
+                            </div>
+                        </div>
+                        <a href="{% url 'blog-detail' %}"><h3 class="h3-title">Guide to Finding the Best SEO Keywords</h3></a>
+                        <a href="{% url 'blog-detail' %}" class="btn-link-one">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="blog-box-one wow fadeInUp" data-wow-delay=".6s">
+                    <div class="blog-img-one">
+                        <img src="{% static 'images/blog3-one.jpg' %}" alt="Blog">
+                        <div class="blog-tag-one">
+                            <a href="javascript:void(0);">Advertising</a>
+                        </div>
+                    </div>
+                    <div class="blog-box-content-one">
+                        <div class="blog-date-author-one">
+                            <div class="blog-date-one">
+                                <div class="blog-circle-one"></div>
+                                <a href="javascript:void(0);">7 March 2021</a>
+                            </div>
+                            <div class="blog-author-one">
+                                <div class="blog-circle-one"></div>
+                                <a href="javascript:void(0);">By Developers</a>
+                            </div>
+                        </div>
+                        <a href="{% url 'blog-detail' %}"><h3 class="h3-title">The Difference Between a Sale & a Flopped Ad</h3></a>
+                        <a href="{% url 'blog-detail' %}" class="btn-link-one">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="blog-box-one wow fadeInDown" data-wow-delay=".6s">
+                    <div class="blog-img-one">
+                        <img src="{% static 'images/blog4-one.jpg' %}" alt="Blog">
+                        <div class="blog-tag-one">
+                            <a href="javascript:void(0);">Advertising</a>
+                        </div>
+                    </div>
+                    <div class="blog-box-content-one">
+                        <div class="blog-date-author-one">
+                            <div class="blog-date-one">
+                                <div class="blog-circle-one"></div>
+                                <a href="javascript:void(0);">7 March 2021</a>
+                            </div>
+                            <div class="blog-author-one">
+                                <div class="blog-circle-one"></div>
+                                <a href="javascript:void(0);">By Developers</a>
+                            </div>
+                        </div>
+                        <a href="{% url 'blog-detail' %}"><h3 class="h3-title">The 10 Keyword Tools to Inprove Your SEO</h3></a>
+                        <a href="{% url 'blog-detail' %}" class="btn-link-one">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="blog-box-one wow fadeInUp" data-wow-delay=".6s">
+                    <div class="blog-img-one">
+                        <img src="{% static 'images/blog5-one.jpg' %}" alt="Blog">
+                        <div class="blog-tag-one">
+                            <a href="javascript:void(0);">Advertising</a>
+                        </div>
+                        <div class="banner-play-btn">
+                            <a href="https://www.youtube.com/watch?v=yUwpx81trCo" class="banner-play-icon popup-youtube" title="Play Video"><span><i class="fa fa-play" aria-hidden="true"></i></span></a>
+                        </div>
+                    </div>
+                    <div class="blog-box-content-one">
+                        <div class="blog-date-author-one">
+                            <div class="blog-date-one">
+                                <div class="blog-circle-one"></div>
+                                <a href="javascript:void(0);">7 March 2021</a>
+                            </div>
+                            <div class="blog-author-one">
+                                <div class="blog-circle-one"></div>
+                                <a href="javascript:void(0);">By Developers</a>
+                            </div>
+                        </div>
+                        <a href="{% url 'blog-detail' %}"><h3 class="h3-title">The 3 Easiest Ways to Get Big SEO Results</h3></a>
+                        <a href="{% url 'blog-detail' %}" class="btn-link-one">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="blog-box-one wow fadeInDown" data-wow-delay=".6s">
+                    <div class="blog-img-one">
+                        <img src="{% static 'images/blog6-one.jpg' %}" alt="Blog">
+                        <div class="blog-tag-one">
+                            <a href="javascript:void(0);">Advertising</a>
+                        </div>
+                    </div>
+                    <div class="blog-box-content-one">
+                        <div class="blog-date-author-one">
+                            <div class="blog-date-one">
+                                <div class="blog-circle-one"></div>
+                                <a href="javascript:void(0);">7 March 2021</a>
+                            </div>
+                            <div class="blog-author-one">
+                                <div class="blog-circle-one"></div>
+                                <a href="javascript:void(0);">By Developers</a>
+                            </div>
+                        </div>
+                        <a href="{% url 'blog-detail' %}"><h3 class="h3-title">What is Customer Lifetime Value?</h3></a>
+                        <a href="{% url 'blog-detail' %}" class="btn-link-one">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="blog-box-one wow fadeInUp" data-wow-delay=".6s">
+                    <div class="blog-img-one">
+                        <img src="{% static 'images/blog7-one.jpg' %}" alt="Blog">
+                        <div class="blog-tag-one">
+                            <a href="javascript:void(0);">Advertising</a>
+                        </div>
+                    </div>
+                    <div class="blog-box-content-one">
+                        <div class="blog-date-author-one">
+                            <div class="blog-date-one">
+                                <div class="blog-circle-one"></div>
+                                <a href="javascript:void(0);">7 March 2021</a>
+                            </div>
+                            <div class="blog-author-one">
+                                <div class="blog-circle-one"></div>
+                                <a href="javascript:void(0);">By Developers</a>
+                            </div>
+                        </div>
+                        <a href="{% url 'blog-detail' %}"><h3 class="h3-title">The 10 Best Review Generation Platforms</h3></a>
+                        <a href="{% url 'blog-detail' %}" class="btn-link-one">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="blog-box-one wow fadeInDown" data-wow-delay=".6s">
+                    <div class="blog-img-one">
+                        <img src="{% static 'images/blog8-one.jpg' %}" alt="Blog">
+                        <div class="blog-tag-one">
+                            <a href="javascript:void(0);">Advertising</a>
+                        </div>
+                    </div>
+                    <div class="blog-box-content-one">
+                        <div class="blog-date-author-one">
+                            <div class="blog-date-one">
+                                <div class="blog-circle-one"></div>
+                                <a href="javascript:void(0);">7 March 2021</a>
+                            </div>
+                            <div class="blog-author-one">
+                                <div class="blog-circle-one"></div>
+                                <a href="javascript:void(0);">By Developers</a>
+                            </div>
+                        </div>
+                        <a href="{% url 'blog-detail' %}"><h3 class="h3-title">SEO Analysis of the Google April 2020 Update</h3></a>
+                        <a href="{% url 'blog-detail' %}" class="btn-link-one">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="blog-box-one wow fadeInUp" data-wow-delay=".6s">
+                    <div class="blog-img-one">
+                        <img src="{% static 'images/blog9-one.jpg' %}" alt="Blog">
+                        <div class="blog-tag-one">
+                            <a href="javascript:void(0);">Advertising</a>
+                        </div>
+                    </div>
+                    <div class="blog-box-content-one">
+                        <div class="blog-date-author-one">
+                            <div class="blog-date-one">
+                                <div class="blog-circle-one"></div>
+                                <a href="javascript:void(0);">7 March 2021</a>
+                            </div>
+                            <div class="blog-author-one">
+                                <div class="blog-circle-one"></div>
+                                <a href="javascript:void(0);">By Developers</a>
+                            </div>
+                        </div>
+                        <a href="{% url 'blog-detail' %}"><h3 class="h3-title">The 10 Best Amazon Product Research</h3></a>
+                        <a href="{% url 'blog-detail' %}" class="btn-link-one">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="blog-box-one wow fadeInDown" data-wow-delay=".6s">
+                    <div class="blog-img-one">
+                        <img src="{% static 'images/blog10-one.jpg' %}" alt="Blog">
+                        <div class="blog-tag-one">
+                            <a href="javascript:void(0);">Advertising</a>
+                        </div>
+                        <div class="banner-play-btn">
+                            <a href="https://www.youtube.com/watch?v=yUwpx81trCo" class="banner-play-icon popup-youtube" title="Play Video"><span><i class="fa fa-play" aria-hidden="true"></i></span></a>
+                        </div>
+                    </div>
+                    <div class="blog-box-content-one">
+                        <div class="blog-date-author-one">
+                            <div class="blog-date-one">
+                                <div class="blog-circle-one"></div>
+                                <a href="javascript:void(0);">7 March 2021</a>
+                            </div>
+                            <div class="blog-author-one">
+                                <div class="blog-circle-one"></div>
+                                <a href="javascript:void(0);">By Developers</a>
+                            </div>
+                        </div>
+                        <a href="{% url 'blog-detail' %}"><h3 class="h3-title">Canonicals – The Good, The Bad, & The Ugly</h3></a>
+                        <a href="{% url 'blog-detail' %}" class="btn-link-one">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="blog-box-one wow fadeInUp" data-wow-delay=".6s">
+                    <div class="blog-img-one">
+                        <img src="{% static 'images/blog11-one.jpg' %}" alt="Blog">
+                        <div class="blog-tag-one">
+                            <a href="javascript:void(0);">Advertising</a>
+                        </div>
+                    </div>
+                    <div class="blog-box-content-one">
+                        <div class="blog-date-author-one">
+                            <div class="blog-date-one">
+                                <div class="blog-circle-one"></div>
+                                <a href="javascript:void(0);">7 March 2021</a>
+                            </div>
+                            <div class="blog-author-one">
+                                <div class="blog-circle-one"></div>
+                                <a href="javascript:void(0);">By Developers</a>
+                            </div>
+                        </div>
+                        <a href="{% url 'blog-detail' %}"><h3 class="h3-title">10 New Conversion Rate Optimization Strategies</h3></a>
+                        <a href="{% url 'blog-detail' %}" class="btn-link-one">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="blog-box-one wow fadeInDown" data-wow-delay=".6s">
+                    <div class="blog-img-one">
+                        <img src="{% static 'images/blog12-one.jpg' %}" alt="Blog">
+                        <div class="blog-tag-one">
+                            <a href="javascript:void(0);">Advertising</a>
+                        </div>
+                    </div>
+                    <div class="blog-box-content-one">
+                        <div class="blog-date-author-one">
+                            <div class="blog-date-one">
+                                <div class="blog-circle-one"></div>
+                                <a href="javascript:void(0);">7 March 2021</a>
+                            </div>
+                            <div class="blog-author-one">
+                                <div class="blog-circle-one"></div>
+                                <a href="javascript:void(0);">By Developers</a>
+                            </div>
+                        </div>
+                        <a href="{% url 'blog-detail' %}"><h3 class="h3-title">Ways To Analyse Logs Using The File</h3></a>
+                        <a href="{% url 'blog-detail' %}" class="btn-link-one">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="blog-pagination-one">
+                    <a href="javascript:void(0);" class="pagination-arrow-one"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+                    <ul>
+                        <li class="active">1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                    </ul>
+                    <a href="javascript:void(0);" class="pagination-arrow-one"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<br>
+<br>
+<br>
+<br>
+{% endblock %}

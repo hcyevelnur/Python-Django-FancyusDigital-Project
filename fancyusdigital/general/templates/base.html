@@ -1,0 +1,388 @@
+{% load static %}
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="FancyusDigital" />
+    <meta name="description" content="FancyusDigital" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link rel="icon" href="{% static 'images/fancylogo.png' %}" type="image/gif" sizes="16x16">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/font-awesome.min.css' %}">
+
+    {% block title %}
+    <title>{{title}}</title>
+    {% endblock %}
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/slick.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/slick-theme.css' %}">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/animate.min.css' %}">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/magnific-popup.min.css' %}">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+ <div class="loader-box-one">
+    <div class="dank-ass-loader">
+        <div class="load-shap">
+           <div class="arrow-one up outer outer-18"></div>
+           <div class="arrow-one down outer outer-17"></div>
+           <div class="arrow-one up outer outer-16"></div>
+           <div class="arrow-one down outer outer-15"></div>
+           <div class="arrow-one up outer outer-14"></div>
+        </div>
+        <div class="load-shap">
+           <div class="arrow-one up outer outer-1"></div>
+           <div class="arrow-one down outer outer-2"></div>
+           <div class="arrow-one up inner inner-6"></div>
+           <div class="arrow-one down inner inner-5"></div>
+           <div class="arrow-one up inner inner-4"></div>
+           <div class="arrow-one down outer outer-13"></div>
+           <div class="arrow-one up outer outer-12"></div>
+        </div>
+        <div class="load-shap">
+           <div class="arrow-one down outer outer-3"></div>
+           <div class="arrow-one up outer outer-4"></div>
+           <div class="arrow-one down inner inner-1"></div>
+           <div class="arrow-one up inner inner-2"></div>
+           <div class="arrow-one down inner inner-3"></div>
+           <div class="arrow-one up outer outer-11"></div>
+           <div class="arrow-one down outer outer-10"></div>
+        </div>
+        <div class="load-shap">
+           <div class="arrow-one down outer outer-5"></div>
+           <div class="arrow-one up outer outer-6"></div>
+           <div class="arrow-one down outer outer-7"></div>
+           <div class="arrow-one up outer outer-8"></div>
+           <div class="arrow-one down outer outer-9"></div>
+        </div>
+        <p class="loader__label-one">Loading...</p>
+     </div>
+</div>
+
+<header class="site-header-one">
+    <div class="header-top-one">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="top-contact-one">
+                        <div class="top-mail">
+                            <div class="top-mail-icon-one">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                            </div>
+                            <div class="top-mail-content-one">
+                                <a href="javascript:void(0);" title="Email Now"><p>info@fancyusdigital.com</p></a>
+                            </div>
+                        </div>
+                        <div class="top-call-one">
+                            <div class="top-call-icon-one">
+                                <i class="fa fa-phone" aria-hidden="true"></i>
+                            </div>
+                            <div class="top-call-content-one">
+                                <a href="javascript:void(0);" title="Call Now"><p>+1 (424) 644-7373</p></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    
+                    <div class="Social-midea-one" style="display: flex; justify-content:end">
+                        <div class="js">
+                            <div class="language-picker js-language-picker" data-trigger-class="btn btn--subtle">
+                            <form action="" class="language-picker__form">
+                              <select style="
+                              background-color: #15123E;
+    border-radius: 5px;
+    padding: 1px;
+    color: white;
+    border: none;
+    font-size: 15px;
+                              " name="language-picker-select" id="language-picker-select">
+                                <option  value="/en/">EN</option>
+                                <option value="/es/">ES</option>
+                              </select>
+                            </form>
+                          </div>
+                        </div>
+                        <a href="javascript:void(0);" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="javascript:void(0);" title="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        <a href="javascript:void(0);" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-bottom-one">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-3 col-lg-2">
+                    <div class="site-branding-one">
+                        <a href="{% url 'index' %}" title="FancyusDigital">
+                            <h2 style="
+                            color:white;">Fancyus Digital
+                            </h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-9 col-lg-10">
+                    <div class="header-menu-one">
+                        <nav class="main-navigation-one">
+                            <button class="toggle-button-one">
+                                <span></span>
+                                <span class="toggle-width-one"></span>
+                                <span></span>
+                            </button>
+                           <ul class="menu">
+                            <li class="">
+                                <a href="{% url 'index' %}" title="Home" class="active">{% trans 'Home' %}</a>
+                                </li>
+                                <li class="">
+                                    <a href="{% url 'about-us' %}" title="About Us">{% trans 'About Us' %}</a>
+                                    </li>
+                               <li class="">
+                                <a href="{% url 'services' %}" title="Services">{% trans 'Services' %}</a>
+                                </li>
+                                <li class="sub-items-one">
+                                    <a style="color: white;" title="Pages">{% trans 'Pages' %}</a>
+                                    <ul class="sub-menu-one">
+                                        <li><a href="{% url 'portfolio' %}" title="Portfolio">{% trans 'Portfolio' %}</a></li>
+                                        <li><a href="{% url 'team' %}" title="Team_01">{% trans 'Team' %}</a></li>
+                                        {% comment %}
+                                        <!-- <li><a href="{% url 'pricing' %}" title="Pricing_01">Pricing</a></li> -->
+                                        {% endcomment %}
+                                        <li><a href="{% url 'faq' %}" title="FAQ_01">{% trans 'F.A.Q' %}</a></li>
+                                    </ul>
+                                </li>
+                                {% comment %}
+                                <!-- <li class="">
+                                    <a href="{% url 'blog' %}" title="Blog">Blog</a>
+                                </li> -->
+                                {% endcomment %}
+                                <li class="">
+                                    <a href="{% url 'contact' %}" title="Contact Us">{% trans 'Contact Us' %}</a>
+                                </li>
+                           </ul> 
+                        </nav>
+                        {% comment %}
+                        <!-- <div class="search-box-one">
+                            <div class="search-icon-one">
+                                <a href="" title="Search"><i class="fa fa-search" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="search-input-one">
+                                <div class="search-input-box-one">
+                                    <form>
+                                        <input type="text" name="search" class="form-input-one" placeholder="Search Here..." required>
+                                        <button type="submit" class="sec-btn-one"><span><i class="fa fa-search" aria-hidden="true"></i></span></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div> -->
+                        {% endcomment %}
+                        <div class="black-shadow-one"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+{% block content %}
+
+{% endblock %}
+
+<footer class="main-footer-one">
+    <div class="footer-blur1-one">
+        <img src="{% static 'images/blur_7.png' %}" alt="Blur">
+    </div>
+    <div class="footer-blur2-one">
+        <img src="{% static 'images/blur_7.png' %}" alt="Blur">
+    </div>
+    <div class="footer-one-shape1 animate-this wow fadeIn" data-wow-delay=".4s"></div>
+    <div class="footer-one-shape2 animate-this wow fadeIn" data-wow-delay=".5s"></div>
+    <div class="footer-one-shape3 animate-this wow fadeIn" data-wow-delay=".6s"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="footer-logo-content-one">
+                    <a href="{% url 'index' %}">
+                        <h2 style="color: white;">
+                            FancyusDigital
+                        </h2>
+                    </a>
+                    <p>{% trans 'Maecenas ac elit non justo hendrerit congue et lacinia orci. Integer in lorem vitae tortor molestie cursus sed id eros. Quisque maximus mauris sit amet tortor consectetur, id eleifend justo gravida.' %}</p>
+                    <div class="footer-social-media-one">
+                        <ul>
+                            <li>
+                                <a href="javascript:void(0);"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="footer-links-one">
+                    <h3 class="h3-title">{% trans 'Our Links' %}</h3>
+                    <ul>
+                        <li>
+                            <a href="{% url 'index' %}"><div class="footer-link-hover-one"></div><span>{% trans 'Home' %}</span></a>
+                        </li>
+                        <li>
+                            <a href="{% url 'about-us' %}"><div class="footer-link-hover-one"></div><span>{% trans 'About Us' %}</span></a>
+                        </li>
+                        <li>
+                            <a href="{% url 'services' %}"><div class="footer-link-hover-one"></div><span>{% trans 'Services' %}</span></a>
+                        </li>
+                        {% comment %}
+                        <!-- <li>
+                            <a href="{% url 'blog' %}"><div class="footer-link-hover-one"></div><span>{% trans 'Blog' %}</span></a>
+                        </li> -->
+                        {% endcomment %}
+                        <li>
+                            <a href="{% url 'contact' %}"><div class="footer-link-hover-one"></div><span>{% trans 'Contact Us' %}</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="footer-contact-one">
+                    <h3 class="h3-title">{% trans 'Contact Us' %}</h3>
+                    <ul>
+                        <li>
+                            <div class="footer-contact-icon-one">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            </div>
+                            <span> 1901 Avenue of the Stars,
+                                Los Angeles, CA 90067</span>
+                        </li>
+                        <li>
+                            <div class="footer-contact-icon-one">
+                                <i class="fa fa-phone" aria-hidden="true"></i>
+                            </div>
+                            <span>+1 (424) 644-7373</span>
+                        </li>
+                        <li>
+                            <div class="footer-contact-icon-one">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                            </div>
+                            <span>info@fancyusdigital.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="footer-post-one">
+                    <h3 class="h3-title">{% trans 'Popular Questions' %}</h3>
+                    <ul>
+                        <li>
+                            <a href="{% url 'faq' %}">{% trans 'When will I start seeing results?' %}</a>
+                            <div class="blog-date-one">
+                            </div>
+                        </li>
+                        <li>
+                            <a href="{% url 'faq' %}">{% trans 'Why is digital marketing strategy important for me?' %}</a>
+                            <div class="blog-date-one">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright-one">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-7">
+                    <div class="copyright-text-one">
+                        <span>Copyright &copy; 2023 <a href="{% url 'index' %}">FancyusDigital.</a>{% trans 'All rights reserved.' %}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="progress-wrap active-progress">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+       <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 273.171;"></path>
+    </svg>
+ </div>
+
+<script src="{% static 'js/jquery.min.js' %}"></script>
+
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/popper.min.js' %}"></script>
+
+<script src="{% static 'js/custom.js' %}"></script>
+
+<script src="{% static 'js/slick.min.js' %}"></script>
+
+<script src="{% static 'js/wow.min.js' %}"></script>
+
+<script src="{% static 'js/magnific-popup.js' %}"></script>
+<script src="{% static 'js/custom-magnific-popup.js' %}"></script>
+
+<script src="{% static 'js/typed.min.js' %}"></script>
+<script src="{% static 'js/custom-typed.js' %}"></script>
+
+<script src="{% static 'js/bg-moving.js' %}"></script>
+
+<script src="{% static 'js/custom-scroll-count.js' %}"></script>
+
+<script src="{% static 'js/back-to-top.js' %}"></script>
+<script>
+    const menuItems = document.querySelectorAll('.menu li');
+    const homeLink = document.querySelector('.menu li:first-child a');
+
+    function setActivePage() {
+        const currentPath = window.location.pathname;
+        menuItems.forEach(item => {
+            const link = item.querySelector('a');
+            if (link.getAttribute('href') === currentPath) {
+                item.classList.add('active');
+            } else {
+                item.classList.remove('active');
+            }
+        });
+        homeLink.classList.add('active');
+    }
+
+    setActivePage();
+</script>
+
+<script>
+    const languagePickerSelect = document.getElementById('language-picker-select');
+    languagePickerSelect.addEventListener('change', function() {
+      const selectedOption = this.options[this.selectedIndex];
+      window.location.href = selectedOption.value;
+    });
+  
+    // Aktif dilin seçeneğini belirleme
+    const currentUrl = window.location.pathname;
+    const optionElements = languagePickerSelect.getElementsByTagName('option');
+    for (let option of optionElements) {
+      if (option.value === currentUrl) {
+        option.selected = true;
+      }
+    }
+  </script>
+</body>
+</html>
+

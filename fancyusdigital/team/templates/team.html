@@ -1,0 +1,141 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+{% load i18n %}
+
+<section class="main-inner-banner-one">
+    <div class="blur-1">
+        <img src="{% static 'images/Blur_1.png' %}" alt="bg blur">
+    </div>
+    <div class="blur-2">
+        <img src="{% static 'images/Blur_2.png' %}" alt="bg blur">
+    </div>
+    <div class="banner-one-shape1 animate-this wow fadeIn" data-wow-delay=".7s"></div>
+    <div class="banner-one-shape2 animate-this wow fadeIn" data-wow-delay=".9s"></div>
+    <div class="banner-one-shape3 animate-this wow fadeIn" data-wow-delay="1s"></div>
+    <div class="banner-one-shape4">
+        <img src="{% static 'images/banner-inner-shape-one.png' %}" alt="shap">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="breadcrum-title-one">
+                    <h1 class="h1-title">{% trans 'Our Team' %}</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="main-skills-in-team-one">
+    <div class="skill-shape-one">
+        <img src="{% static 'images/skill-shape-one.png' %}" alt="Shape">
+    </div>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="skill-img-one wow fadeInLeft" data-wow-delay=".4s">
+                    <img src="{% static 'images/skill-img-one.png' %}" alt="Skill">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="skill-content-box-one wow fadeInRight" data-width=".4s" id="counter">
+                    <div class="skill-title-one">
+                        <div class="subtitle">
+                            <div class="subtitle-circle-one"></div>
+                            <h2 class="h2-subtitle-one">{% trans 'Our Skills' %}</h2>
+                        </div>
+                        <h2 class="h2-title">{% trans 'Get More Traffic On Your Website' %}</h2>
+                    </div>
+                    <div class="skill-counter-box" id="progress_bar">
+                        <div class="skill-progress-one">
+                            <div class="skill-bar-box-one">
+                                <h3 class="h3-title">{% trans 'Digital Strategy' %}</h3>
+                                <div class="skill-bar-percent-one">
+                                    <h3 class="h3-title counting-data" data-count="90">0</h3><span>%</span>
+                                </div>
+                                <div class="skill-bar skill-bar-one" data-width="90%">
+                                    <div class="skill-bar-inner skill-bar-inner-one"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-progress-one">
+                            <div class="skill-bar-box-one">
+                                <h3 class="h3-title">{% trans 'Financial Services' %}</h3>
+                                <div class="skill-bar-percent-one">
+                                    <h3 class="h3-title counting-data" data-count="80">0</h3><span>%</span>
+                                </div>
+                                <div class="skill-bar skill-bar-one" data-width="80%">
+                                    <div class="skill-bar-inner skill-bar-inner-one"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-progress-one">
+                            <div class="skill-bar-box-one mb-0">
+                                <h3 class="h3-title">{% trans 'Consulting' %}</h3>
+                                <div class="skill-bar-percent-one">
+                                    <h3 class="h3-title counting-data" data-count="70">0</h3><span>%</span>
+                                </div>
+                                <div class="skill-bar skill-bar-one" data-width="70%">
+                                    <div class="skill-bar-inner skill-bar-inner-one"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="main-team-in-page-one">
+    <div class="team-shape-one">
+        <img src="{% static 'images/service-shape-one.png' %}" alt="Shape">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="team-title-one">
+                    <div class="subtitle">
+                        <div class="subtitle-circle-one"></div>
+                        <h2 class="h2-subtitle-one">{% trans 'Our Specialists' %}</h2>
+                        <div class="subtitle-circle2-one"></div>
+                    </div>
+                    <h2 class="h2-title">{% trans 'Our Successful Team' %}</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            {% for teamm in teams %}
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="team-box-one wow fadeInUp" data-wow-delay=".4s">
+                    <div class="team-img-box-one">
+                        <div class="team-img-one">
+                            <img src="{{teamm.image_1.url}}" class="rounded-circle" alt="Member">
+                        </div>
+                    </div>
+                    <div class="team-content-box-one">
+                        <a href="{% url 'team-detail' pk=teamm.pk %}"><h3 class="h3-title">{{teamm.name}}</h3></a>
+                        <span>{{teamm.work}}</span>
+                        <div class="team-social-one">
+                            <ul>
+                                <li>
+                                    <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                </li>
+                                <li>
+                                    <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                </li>
+                                <li>
+                                    <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+{% endblock %}

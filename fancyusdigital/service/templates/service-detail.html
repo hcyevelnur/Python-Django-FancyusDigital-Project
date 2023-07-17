@@ -1,0 +1,124 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+{% load i18n %}
+
+<section class="main-inner-banner-one">
+    <div class="blur-1">
+        <img src="{% static 'images/Blur_1.png' %}" alt="bg blur">
+    </div>
+    <div class="blur-2">
+        <img src="{% static 'images/Blur_2.png' %}" alt="bg blur">
+    </div>
+    <div class="banner-one-shape1 animate-this wow fadeIn" data-wow-delay=".7s"></div>
+    <div class="banner-one-shape2 animate-this wow fadeIn" data-wow-delay=".9s"></div>
+    <div class="banner-one-shape3 animate-this wow fadeIn" data-wow-delay="1s"></div>
+    <div class="banner-one-shape4">
+        <img src="{% static 'images/banner-inner-shape-one.png' %}" alt="shap">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="breadcrum-title-one">
+                    <h1 class="h1-title">{{ service.title }}</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="main-service-detail-in-one">
+    <div class="service-detail-shape1-one">
+        <img src="{% static 'images/service-detail-shape1-one.png' %}" alt="Shape">
+    </div>
+    <div class="service-detail-shape2-one">
+        <img src="{% static 'images/service-detail-shape2-one.png' %}" alt="Shape">
+    </div>
+    <div class="service-detail-shape3-one">
+        <img src="{% static 'images/service-detail-shape1-one.png' %}" alt="Shape">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-4 col-lg-5">
+                <div class="service-list-one">
+                    <ul>
+                        <li class="active">
+                            <a>
+                               <span>{{ service.title }}</span><i class="fa fa-chevron-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="service-contact-box-one">
+                   <div class="service-contact-blur-one">
+                       <img src="{% static 'images/blur_8.png' %}" alt="Blur">
+                   </div>
+                   <h3 class="h3-title">{% trans 'Contact With Us For Any Advice' %}</h3>
+                   <div class="service-contact-icon-one">
+                       <img src="{% static 'images/call_service-one.png' %}" alt="Icon">
+                   </div>
+                   <p>{% trans 'Need help? Talk to an expert' %}</p>
+                   <h3 class="h3-title">+91 578 6941 354</h3> 
+                </div>
+            </div>
+            <div class="col-xl-8 col-lg-7">
+                <div class="service-detail-info-one">
+                    <div class="service-detail-img-one wow fadeInUp" data-wow-delay=".4s">
+                        <img src="{{ service.image_1.url }}" alt="Service Detail">
+                    </div>
+                    <div class="service-detail-title-one">
+                        <div class="service-detail-icon">
+                            <img src="{{ service.image.url }}" alt="ICon">
+                        </div>
+                        <div class="service-detail-title-line-one"></div>
+                        <h2 class="h2-title">{{ service.title }}</h2>
+                    </div>
+                    <p>{{ service.description }}</p>
+                    <p>{{ service.description2 }}</p>
+                    <div class="service-detail-accordion-one" id="accordionExample">
+                        <div class="accordion one">
+                            <div class="accordion-item one">
+                                <h3 class="accordion-header h3-title" id="headingOne">
+                                    <button class="accordion-button one" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        {{ service.title_1 }}<span class="icon"><i class="fa fa-angle-left" aria-hidden="true"></i></span>
+                                    </button>
+                                </h3>
+                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <P>{{ service.description_3 }}</P>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item one">
+                                <h3 class="accordion-header h3-title" id="headingTwo">
+                                  <button class="accordion-button one collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    {{ service.title_2 }}<span class="icon"><i class="fa fa-angle-left" aria-hidden="true"></i></span>
+                                  </button>
+                                </h3>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                  <div class="accordion-body">
+                                      <P>{{ service.description_4 }}</P>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item one">
+                                <h3 class="accordion-header h3-title" id="headingThree">
+                                  <button class="accordion-button one collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    {{ service.title_3 }}<span class="icon"><i class="fa fa-angle-left" aria-hidden="true"></i></span>
+                                  </button>
+                                </h3>
+                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                  <div class="accordion-body">
+                                      <P>{{ service.description_4 }}</P>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

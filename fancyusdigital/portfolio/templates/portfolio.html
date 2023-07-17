@@ -1,0 +1,150 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+{% load i18n %}
+
+<style>
+    button {
+    font-family: 'Roboto', sans-serif;
+        border: 0px;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: black;
+    transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
+    padding: 8px 20px;
+    position: relative;
+    z-index: 0;
+    text-align: center;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: transparent;
+    margin-left: -20px;
+}
+
+button.active {
+    background: -moz-linear-gradient(90deg, rgba(255,115,104,1) 0%, rgba(255,176,108,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(255,115,104,1) 0%, rgba(255,176,108,1) 100%);
+    background: linear-gradient(90deg, rgba(255,115,104,1) 0%, rgba(255,176,108,1) 100%);
+    transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
+    box-shadow: 0px 10px 20px 0px rgb(255,115,104,0.3);
+    opacity: 1;
+}
+
+</style>
+
+<section class="main-inner-banner-one">
+    <div class="blur-1">
+        <img src="{% static 'images/Blur_1.png' %}" alt="bg blur">
+    </div>
+    <div class="blur-2">
+        <img src="{% static 'images/Blur_2.png' %}" alt="bg blur">
+    </div>
+    <div class="banner-one-shape1 animate-this wow fadeIn" data-wow-delay=".7s"></div>
+    <div class="banner-one-shape2 animate-this wow fadeIn" data-wow-delay=".9s"></div>
+    <div class="banner-one-shape3 animate-this wow fadeIn" data-wow-delay="1s"></div>
+    <div class="banner-one-shape4">
+        <img src="{% static 'images/banner-inner-shape-one.png' %}" alt="shap">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="breadcrum-title-one">
+                    <h1 class="h1-title">{% trans 'Portfolio' %}</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div style="padding-top: 100px; margin-left: 20px" class="row">
+    <div class="col-lg-12">
+        <div class="portfolio-tabbing-two">
+            <ul id="filters">
+                <li>
+                    <button class="active" data-category="all" onclick="filterPortfolio('all')">{% trans 'All' %}</button>
+                </li>
+                <li>
+                    <button data-category="Digital Pr" onclick="filterPortfolio('Digital Pr')">{% trans 'Digital Pr' %}</button>
+                </li>
+                <li>
+                    <button data-category="Monitoring" onclick="filterPortfolio('Monitoring')">{% trans 'Monitoring' %}</button>
+                </li>
+                <li>
+                    <button data-category="Ppc" onclick="filterPortfolio('Ppc')">{% trans 'Ppc' %}</button>
+                </li>
+                <li>
+                    <button data-category="Seo" onclick="filterPortfolio('Seo')">{% trans 'Seo' %}</button>
+                </li>
+                <li>
+                    <button data-category="Smm" onclick="filterPortfolio('Smm')">{% trans 'Smm' %}</button>
+                </li>
+            </ul>
+        </div> 
+    </div>
+</div>
+
+<section class="main-portfolio-one">
+    <div class="container-fluid side-p">
+        <div class="row">
+            {% for portfolio in portfolios %}
+            <div data-category="{{ portfolio.category }}" class="col-xl-3 col-lg-4 col-md-6 col-sm-6 portfolio-item">
+                <div class="portfolio-box-one wow fadeInUp" data-wow-delay=".4s">
+                    <img src="{{portfolio.image_1.url}}" class="mob-no-one" alt="Portfolio">
+                    <img src="{{portfolio.image_22.url}}" class="dec-no-one" alt="">
+                    <div class="portfolio-hover-one">
+                        {% if portfolio.title %}
+                        <a href="{% url 'portfolio-detail' pk=portfolio.pk %}">
+                            {% endif %}
+                            <h3 class="h3-title">{{portfolio.portifolio_name}}</h3></a>
+                        
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<script>
+    function filterPortfolio(category) {
+        const items = document.getElementsByClassName('portfolio-item');
+
+        if (category === 'all') {
+            for (let i = 0; i < items.length; i++) {
+                items[i].style.animation = 'fadeIn 0.5s ease-in-out';
+                items[i].style.display = 'block';
+            }
+        } else {
+            for (let i = 0; i < items.length; i++) {
+                const itemCategory = items[i].getAttribute('data-category');
+                if (itemCategory !== category) {
+                    items[i].style.animation = 'fadeOut 0.5s ease-in-out';
+                    setTimeout(() => {
+                        items[i].style.display = 'none';
+                    }, 500);
+                } else {
+                    items[i].style.animation = 'fadeIn 0.5s ease-in-out';
+                    items[i].style.display = 'block';
+                }
+            }
+        }
+    }
+    var buttons = document.querySelectorAll('.portfolio-tabbing-two button');
+
+    buttons.forEach(function(button) {
+        button.addEventListener('click', function() {
+            var category = this.getAttribute('data-category');
+            
+            buttons.forEach(function(btn) {
+                btn.classList.remove('active');
+            });
+            
+            this.classList.add('active');
+            
+            filterPortfolio(category);
+        });
+    });
+    
+</script>
+
+{% endblock %}

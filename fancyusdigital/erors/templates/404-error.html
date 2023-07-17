@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<section class="main-inner-banner-one">
+    <div class="blur-1">
+        <img src="{% static 'images/Blur_1.png' %}" alt="bg blur">
+    </div>
+    <div class="blur-2">
+        <img src="{% static 'images/Blur_2.png' %}" alt="bg blur">
+    </div>
+    <div class="banner-one-shape1 animate-this wow fadeIn" data-wow-delay=".7s"></div>
+    <div class="banner-one-shape2 animate-this wow fadeIn" data-wow-delay=".9s"></div>
+    <div class="banner-one-shape3 animate-this wow fadeIn" data-wow-delay="1s"></div>
+    <div class="banner-one-shape4">
+        <img src="{% static 'images/banner-inner-shape-one.png' %}" alt="shap">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="breadcrum-title-one">
+                    <h1 class="h1-title">Error Page</h1>
+                    <div class="breadcrum-one">
+                        <ul>
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-chevron-right"></i>
+                            </li>
+                            <li>
+                                <a href="404-error.html">Error 404</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="main-404-error-one">
+    <div class="error-404-shape1-one">
+        <img src="{% static 'images/404-error-shape1-one.png' %}" alt="">
+    </div>
+    <div class="error-404-shape2-one">
+        <img src="{% static 'images/404-error-shape2-one.png' %}" alt="">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="error-404-img-one wow fadeInUp animated" data-wow-delay=".4s">
+                    <img src="{% static 'images/404-error-part1-one.png' %}" alt="404 Error">
+                    <img src="{% static 'images/404-error-part2-one.png' %}" class="error-404-img-part2-one" alt="404 Error">
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="error-404-content-one">
+                    <h2 class="h2-title">Sorry We Can’t Find That Page!</h2>
+                    <p>The page you are looking for was moved, removed, renamed or never existed.</p>
+                    <a href="index.html" class="sec-btn-one">Back To Home</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

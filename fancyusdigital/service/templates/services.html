@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+{% load i18n %}
+
+<section class="main-inner-banner-one">
+    <div class="blur-1">
+        <img src="{% static 'images/Blur_1.png' %}" alt="bg blur">
+    </div>
+    <div class="blur-2">
+        <img src="{% static 'images/Blur_2.png' %}" alt="bg blur">
+    </div>
+    <div class="banner-one-shape1 animate-this wow fadeIn" data-wow-delay=".7s"></div>
+    <div class="banner-one-shape2 animate-this wow fadeIn" data-wow-delay=".9s"></div>
+    <div class="banner-one-shape3 animate-this wow fadeIn" data-wow-delay="1s"></div>
+    <div class="banner-one-shape4">
+        <img src="{% static 'images/banner-inner-shape-one.png' %}" alt="shap">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="breadcrum-title-one">
+                    <h1 class="h1-title">{% trans 'Our Services' %}</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="main-services-in-one">
+    <div class="service-shape-one">
+        <img src="{% static 'images/service-shape-one.png' %}" alt="Shape">
+    </div>
+    <div class="container">
+        <div class="row">
+            {% for service in services %}
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
+                <div class="service-box-one wow fadeInUp" data-wow-delay=".4s">
+                    <div class="service-boxbg-shape-one">
+                        <img src="{% static 'images/blur_3.png' %}" alt="Blur">
+                    </div>
+                    <div class="service-icon-one">
+                        <img src="{{ service.image.url }}" class="yes-d-one" alt="Icon">
+                        <img src="{{ service.image2.url }}" class="no-d-one" alt="Icon">
+                    </div>
+                    <div class="service-box-content-one">
+                        <a href="{% url 'service-detail' pk=service.pk %}"><h3 class="h3-title">{{ service.title }}</h3></a>
+                        <p>{{ service.description }}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+{% endblock %}

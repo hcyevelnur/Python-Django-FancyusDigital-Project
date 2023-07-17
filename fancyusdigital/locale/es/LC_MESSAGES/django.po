@@ -1,0 +1,492 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-07-16 23:51+0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: fancyusdigital/settings.py:127
+msgid "English"
+msgstr ""
+
+#: fancyusdigital/settings.py:128
+msgid "Español"
+msgstr ""
+
+#: faq/templates/faq.html:23
+msgid "F.A.Q"
+msgstr "Preguntas más frecuentes"
+
+#: faq/templates/faq.html:48
+msgid "Free SEO Analysis"
+msgstr "¿Obtener análisis SEO gratis?"
+
+#: faq/templates/faq.html:55
+msgid "Full Name"
+msgstr "Nombre Completo"
+
+#: faq/templates/faq.html:60 general/templates/contact-us.html:122
+#: general/templates/index.html:616
+msgid "Email Address"
+msgstr "Dirección de correo electrónico"
+
+#: faq/templates/faq.html:65 general/templates/index.html:621
+msgid "Phone No."
+msgstr "Telefono no."
+
+#: faq/templates/faq.html:70 general/templates/contact-us.html:132
+#: general/templates/index.html:626
+msgid "Message"
+msgstr "Mensaje"
+
+#: faq/templates/faq.html:75 general/templates/contact-us.html:137
+#: general/templates/index.html:631
+msgid "Submit Now"
+msgstr "Aplique ahora"
+
+#: faq/templates/faq.html:87 general/templates/base.html:169
+#, fuzzy
+#| msgid "F.A.Q"
+msgid "FAQ"
+msgstr "Preguntas más frecuentes"
+
+#: faq/templates/faq.html:89 general/templates/base.html:299
+msgid "Popular Questions"
+msgstr "Preguntas populares"
+
+#: faq/templates/faq.html:131 general/templates/index.html:307
+msgid "Get Latest Update Of Marketing Ideas"
+msgstr "Obtenga la última actualización de ideas de marketing"
+
+#: faq/templates/faq.html:139 general/templates/index.html:315
+msgid "Subscribe Now"
+msgstr "Suscríbase ahora"
+
+#: faq/templates/faq.html:158 general/templates/index.html:547
+msgid "Testimonial"
+msgstr "Testimonial"
+
+#: faq/templates/faq.html:160 general/templates/index.html:549
+msgid "What Our Client Say"
+msgstr "Lo que dice nuestra clienta"
+
+#: faq/templates/faq.html:162
+msgid ""
+"In tincidunt eleifend libero, tempor dignissim ex placerat in. Nam ultricies "
+"posuere sodales. Cras lacus odio, elementum vel viverra non."
+msgstr ""
+"In tincidunt eleifend libero, tempor dignissim ex placerat in. Nam ultricies "
+"posuere sodales. Cras lacus odio, elementum vel viverra non."
+
+#: general/templates/about-us.html:23 general/templates/about-us.html:51
+#: general/templates/base.html:155 general/templates/base.html:254
+msgid "About Us"
+msgstr "Sobre nosotras"
+
+#: general/templates/about-us.html:53
+msgid "At Fancyus Digital"
+msgstr "En Fancyus Digital"
+
+#: general/templates/about-us.html:55
+msgid ""
+"At Fancyus Digital, we are passionate about empowering businesses with "
+"digital solutions that drive results. With a team of experienced "
+"professionals, we combine creativity, innovation, and strategic thinking to "
+"deliver exceptional outcomes. Our focus is on building long-term "
+"partnerships with our clients, understanding their goals, and crafting "
+"strategies that make a real impact. Discover more about our company, values, "
+"and expertise on our About page."
+msgstr ""
+"En Fancyus Digital, nos apasiona empoderar a las empresas con soluciones "
+"digitales que generen resultados. Con un equipo de profesionales "
+"experimentados, combinamos creatividad, innovación y pensamiento estratégico "
+"para ofrecer resultados excepcionales. Nuestro enfoque es construir "
+"asociaciones a largo plazo con nuestros clientes, comprender sus objetivos y "
+"diseñar estrategias que tengan un impacto real. Descubra más sobre nuestra "
+"empresa, valores y experiencia en nuestra página Acerca de."
+
+#: general/templates/about-us.html:62
+msgid ""
+"From social media management to Google SEO and ADS, branding, and web "
+"design, we offer tailored solutions to meet your unique needs."
+msgstr ""
+"Desde la gestión de redes sociales hasta Google SEO y ADS, branding y web "
+"diseño, ofrecemos soluciones a medida para satisfacer sus necesidades únicas."
+
+#: general/templates/about-us.html:68
+msgid ""
+"Our goal is to help businesses thrive in the digital landscape through our "
+"comprehensive range of services."
+msgstr ""
+"Nuestro objetivo es ayudar a las empresas a prosperar en el panorama digital "
+"a través de nuestro amplia gama de servicios."
+
+#: general/templates/about-us.html:108
+msgid "Our History"
+msgstr "Nuestra historia"
+
+#: general/templates/about-us.html:121 general/templates/about-us.html:137
+msgid "Brief History"
+msgstr "Breve historia"
+
+#: general/templates/about-us.html:122 general/templates/about-us.html:130
+#: general/templates/about-us.html:138 general/templates/about-us.html:146
+msgid ""
+"Quisque imperdiet purus in tortor efficitur auctor. Mauris ultricies velit."
+msgstr ""
+"Quisque imperdiet purus in tortor efficitur auctor. Mauris ultricies velit."
+
+#: general/templates/about-us.html:129
+msgid "Something Big"
+msgstr "Algo grande"
+
+#: general/templates/about-us.html:145
+msgid "Army Grows"
+msgstr "El ejército crece"
+
+#: general/templates/about-us.html:163
+msgid "How To Get Started"
+msgstr "Cómo empezar"
+
+#: general/templates/about-us.html:166
+msgid "Few Simple Steps"
+msgstr "Pocos pasos simples"
+
+#: general/templates/about-us.html:178
+msgid "Introduction"
+msgstr "Introducción"
+
+#: general/templates/about-us.html:179 general/templates/about-us.html:191
+#: general/templates/about-us.html:203
+msgid ""
+"Aliquam non congue odio, quis dictum nisi. Donec nec mi gravida, tempor "
+"libero a, viverra libero interdum et malesuada."
+msgstr ""
+"Aliquam non congue odio, quis dictum nisi. Donec nec mi gravida, tempor "
+"libero a, viverra libero interdum et malesuada."
+
+#: general/templates/about-us.html:190
+msgid "Research"
+msgstr "Investigación"
+
+#: general/templates/about-us.html:202
+msgid "Termination"
+msgstr "Terminación"
+
+#: general/templates/base.html:152 general/templates/base.html:251
+msgid "Home"
+msgstr "Hogar"
+
+#: general/templates/base.html:158 general/templates/base.html:257
+#, fuzzy
+#| msgid "Our Services"
+msgid "Services"
+msgstr "Nuestros servicios"
+
+#: general/templates/base.html:161
+msgid "Pages"
+msgstr "Paginas"
+
+#: general/templates/base.html:163 portfolio/templates/portfolio.html:53
+msgid "Portfolio"
+msgstr "Portafolio"
+
+#: general/templates/base.html:164
+msgid "Team"
+msgstr "Equipo"
+
+#: general/templates/base.html:179 general/templates/base.html:266
+#: general/templates/base.html:273 general/templates/contact-us.html:23
+#: general/templates/contact-us.html:47
+msgid "Contact Us"
+msgstr "Contacta con nosotras"
+
+#: general/templates/base.html:230
+msgid ""
+"Maecenas ac elit non justo hendrerit congue et lacinia orci. Integer in "
+"lorem vitae tortor molestie cursus sed id eros. Quisque maximus mauris sit "
+"amet tortor consectetur, id eleifend justo gravida."
+msgstr ""
+"Mecenas ac elit non justo hendrerit congue et lacinia orci. Número entero en "
+"lorem vitae tortor molestie cursus sed id eros. Quisque maximus mauris sit "
+"amet tortor consectetur, id eleifend just gravida."
+
+#: general/templates/base.html:248
+msgid "Our Links"
+msgstr "Nuestros enlaces"
+
+#: general/templates/base.html:302
+msgid "When will I start seeing results?"
+msgstr "¿Cuándo empezaré a ver resultados?"
+
+#: general/templates/base.html:307
+msgid "Why is digital marketing strategy important for me?"
+msgstr "¿Por qué es importante para mí la estrategia de marketing digital?"
+
+#: general/templates/base.html:321
+msgid "All rights reserved."
+msgstr "Reservados todos los derechos."
+
+#: general/templates/contact-us.html:49 general/templates/contact-us.html:99
+#: general/templates/index.html:593
+msgid "Get In Touch"
+msgstr "Ponerse en contacto"
+
+#: general/templates/contact-us.html:50
+msgid ""
+"Maecenas sit amet felis purus. Ut nec interdum ligula. Duis volutpat libero "
+"ante, gravida finibus lorem finibus in."
+msgstr ""
+"Mecenas sit amet felis purus. Ut nec interdum ligula. Duis volutpat libero "
+"ante, gravida finibus lorem finibus en."
+
+#: general/templates/contact-us.html:58
+msgid "Email:"
+msgstr "Correo electrónico:"
+
+#: general/templates/contact-us.html:67
+msgid "Call Now:"
+msgstr "Llama ahora:"
+
+#: general/templates/contact-us.html:76
+msgid "City:"
+msgstr "Ciudad:"
+
+#: general/templates/contact-us.html:101 general/templates/index.html:595
+msgid "Get Free SEO Analysis?"
+msgstr "¿Obtener análisis SEO gratis?"
+
+#: general/templates/contact-us.html:102 general/templates/index.html:596
+msgid ""
+"Nunc cursus tortor vel interdum commodo. In euismod maximus imperdiet. "
+"Aliquam et justo eu libero sodales imperdiet. Vivamus sit amet lectus quis "
+"vitae placerat ligula interdum euismod purus congue facilisis nec ut urna."
+msgstr "Nunc cursus tortor vel interdum commodo. En Euismod Maximus Imperdiet."
+
+#: general/templates/contact-us.html:112 general/templates/index.html:606
+msgid "First Name"
+msgstr "Nombre del cliente:"
+
+#: general/templates/contact-us.html:117 general/templates/index.html:611
+msgid "Last Name"
+msgstr "Apellido"
+
+#: general/templates/contact-us.html:127
+msgid "Phone No"
+msgstr "Telefono no."
+
+#: general/templates/index.html:50
+msgid "Watch More"
+msgstr "Ver más"
+
+#: general/templates/index.html:80
+msgid "Welcome to Fancyus Digital!"
+msgstr "Bienvenido a Fancyus Digital"
+
+#: general/templates/index.html:83
+msgid ""
+"We are a leading digital solutions company based in the United States. Our goal is to help businesses thrive in the digital landscape through our comprehensive range of services."
+msgstr ""
+"Nuestro objetivo es ayudar a las empresas a prosperar en el panorama digital a través de nuestro amplia gama de servicios."
+
+#: general/templates/index.html:218 service/templates/services.html:23
+msgid "Our Services"
+msgstr "Nuestros servicios"
+
+#: general/templates/index.html:221
+msgid "Best Services For Business"
+msgstr "Los mejores servicios para empresas"
+
+#: general/templates/index.html:254
+msgid "Recent Portfolio"
+msgstr "Cartera reciente"
+
+#: general/templates/index.html:256
+msgid "Our Latest Case Studies"
+msgstr "Nuestros últimos casos de estudio"
+
+#: general/templates/index.html:261
+msgid "View All Portfolio"
+msgstr "Ver todo el portafolio"
+
+#: general/templates/index.html:314
+msgid "Email Address..."
+msgstr "Dirección de correo electrónico"
+
+#: general/templates/index.html:484 team/templates/team.html:101
+msgid "Our Specialists"
+msgstr "Nuestras especialistas"
+
+#: general/templates/index.html:487
+msgid "Our team"
+msgstr "Nuestro equipo"
+
+#: general/templates/index.html:551
+msgid ""
+"The level of expertise and attention to detail showcased by Fanyus Digital "
+"is truly impressive."
+msgstr ""
+"El nivel de experiencia y atención al detalle mostrado por Fanyus Digital es "
+"verdaderamente impresionante."
+
+#: general/templates/index.html:642
+msgid "Welcome to Fancyus Digital"
+msgstr "Bienvenido a Fancyus Digital"
+
+#: general/templates/index.html:642
+msgid "We Help Grow Your Idea"
+msgstr "Ayudamos a hacer crecer su idea"
+
+#: general/templates/index.html:642
+msgid "We Help Grow Your Brand"
+msgstr "Ayudamos a hacer crecer su marca"
+
+#: portfolio/templates/portfolio-detail.html:62
+msgid "Project Infomation"
+msgstr "Información del proyecto"
+
+#: portfolio/templates/portfolio-detail.html:66
+msgid "Client Name:"
+msgstr "Nombre del cliente:"
+
+#: portfolio/templates/portfolio-detail.html:70
+msgid "Date:"
+msgstr "Fecha:"
+
+#: portfolio/templates/portfolio-detail.html:74
+msgid "Website:"
+msgstr "Sitio web:"
+
+#: portfolio/templates/portfolio-detail.html:78
+msgid "Category:"
+msgstr "Categoría:"
+
+#: portfolio/templates/portfolio-detail.html:101
+msgid "Onsite SEO"
+msgstr "SEO en el sitio"
+
+#: portfolio/templates/portfolio-detail.html:102
+#: portfolio/templates/portfolio-detail.html:113
+#: portfolio/templates/portfolio-detail.html:124
+msgid "Fusce blandit felis mollis arcu blandit pulvinar."
+msgstr "Fusce blandit felis mollis arcu blandit pulvinar."
+
+#: portfolio/templates/portfolio-detail.html:112
+msgid "Mobile SEO"
+msgstr "SEO móvil"
+
+#: portfolio/templates/portfolio-detail.html:123
+msgid "Technical SEO"
+msgstr "SEO técnico"
+
+#: portfolio/templates/portfolio.html:64
+msgid "All"
+msgstr "Toda"
+
+#: portfolio/templates/portfolio.html:67
+msgid "Digital Pr"
+msgstr "Digital Pr"
+
+#: portfolio/templates/portfolio.html:70
+msgid "Monitoring"
+msgstr "Supervisión"
+
+#: portfolio/templates/portfolio.html:73
+msgid "Ppc"
+msgstr "Ppc"
+
+#: portfolio/templates/portfolio.html:76
+msgid "Seo"
+msgstr "Seo"
+
+#: portfolio/templates/portfolio.html:79
+msgid "Smm"
+msgstr "Smm"
+
+#: service/templates/service-detail.html:56
+msgid "Contact With Us For Any Advice"
+msgstr "Contacta con nosotras para cualquier consejo"
+
+#: service/templates/service-detail.html:60
+msgid "Need help? Talk to an expert"
+msgstr "¿Necesitas ayuda? Habla con un experto"
+
+#: team/templates/team-detail.html:56
+msgid "Service Support:"
+msgstr "Detalle del servicio"
+
+#: team/templates/team-detail.html:62
+msgid "Joining Date:"
+msgstr "Dia de ingreso:"
+
+#: team/templates/team-detail.html:70
+msgid "Years Of Experience:"
+msgstr "Años de experiencia:"
+
+#: team/templates/team-detail.html:77
+msgid "Follow Me On:"
+msgstr "Sígueme en:"
+
+#: team/templates/team.html:23
+msgid "Our Team"
+msgstr "Nuestro equipo"
+
+#: team/templates/team.html:46
+msgid "Our Skills"
+msgstr "Nuestras habilidades"
+
+#: team/templates/team.html:48
+msgid "Get More Traffic On Your Website"
+msgstr "Obtenga más tráfico en su sitio web"
+
+#: team/templates/team.html:53
+msgid "Digital Strategy"
+msgstr "Estrategia Digital"
+
+#: team/templates/team.html:64
+msgid "Financial Services"
+msgstr "Servicios financieros"
+
+#: team/templates/team.html:75
+msgid "Consulting"
+msgstr "Consultante"
+
+#: team/templates/team.html:104
+msgid "Our Successful Team"
+msgstr "Nuestro equipo exitoso"
+
+#~ msgid "Portfolio Detail"
+#~ msgstr "Detalle de la cartera"
+
+#~ msgid "Service Detail"
+#~ msgstr "Detalle del servicio"
+
+#~ msgid "Blog"
+#~ msgstr "Blog"
+
+#~ msgid "Latest Post"
+#~ msgstr "Última publicación"
+
+#~ msgid "Title Tags SEO: When to Include Your Brand and/or Boilerplate"
+#~ msgstr "Etiquetas de título SEO: Cuándo incluir su marca y/o modelo"
+
+#~ msgid "How Do Sessions Work in Google Analytics? Best of Whiteboard Friday"
+#~ msgstr ""
+#~ "Cómo funcionan las sesiones en Google Analytics? Lo mejor del viernes de "
+#~ "pizarra"
+
+#~ msgid "Team Detail"
+#~ msgstr "Detalle del equipo"

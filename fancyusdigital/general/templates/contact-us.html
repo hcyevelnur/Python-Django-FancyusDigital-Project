@@ -1,0 +1,149 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+{% load i18n %}
+
+<section class="main-inner-banner-one">
+    <div class="blur-1">
+        <img src="{% static 'images/Blur_1.png' %}" alt="bg blur">
+    </div>
+    <div class="blur-2">
+        <img src="{% static 'images/Blur_2.png' %}" alt="bg blur">
+    </div>
+    <div class="banner-one-shape1 animate-this wow fadeIn" data-wow-delay=".7s"></div>
+    <div class="banner-one-shape2 animate-this wow fadeIn" data-wow-delay=".9s"></div>
+    <div class="banner-one-shape3 animate-this wow fadeIn" data-wow-delay="1s"></div>
+    <div class="banner-one-shape4">
+        <img src="{% static 'images/banner-inner-shape-one.png' %}" alt="shap">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="breadcrum-title-one">
+                    <h1 class="h1-title">{% trans 'Contact Us' %}</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="main-contact-us-in-one">
+    <div class="contact-us-shape-one">
+        <img src="{% static 'images/contact-us-shape-one.png' %}" alt="Shape">
+    </div>
+    <div class="container">
+        <div class="contact-us-bg-one">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="contact-map-one">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3305.38788073946!2d-118.4173213212392!3d34.05956978716247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1str!2saz!4v1689263685220!5m2!1str!2saz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="contact-us-content-one">
+                        <div class="contact-us-title-one">
+                            <div class="subtitle">
+                                <div class="subtitle-circle-one"></div>
+                                <h2 class="h2-subtitle-one">{% trans 'Contact Us' %}</h2>
+                            </div>
+                            <h2 class="h2-title">{% trans 'Get In Touch' %}</h2>
+                            <p>{% trans 'Maecenas sit amet felis purus. Ut nec interdum ligula. Duis volutpat libero ante, gravida finibus lorem finibus in.' %}</p>
+                        </div>
+                        <ul>
+                            <li>
+                                <div class="contact-us-icon-one">
+                                    <img src="{% static 'images/contact-email-one.png' %}" alt="Email">
+                                </div>
+                                <div class="contact-us-text-one">
+                                    <h3 class="h3-title">{% trans 'Email:' %}</h3>
+                                    <span>info@fancyusdigital.com</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="contact-us-icon-one">
+                                    <img src="{% static 'images/contact-call-one.png' %}" alt="Call">
+                                </div>
+                                <div class="contact-us-text-one">
+                                    <h3 class="h3-title">{% trans 'Call Now:' %}</h3>
+                                    <span>+1 (424) 644-7373</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="contact-us-icon-one">
+                                    <img src="{% static 'images/conatct-location-one.png' %}" alt="Location">
+                                </div>
+                                <div class="contact-us-text-one">
+                                    <h3 class="h3-title">{% trans 'City:' %}</h3>
+                                    <span> 1901 Avenue of the Stars,
+                                        Los Angeles, CA 90067</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="main-get-in-touch-in-page-one">
+    <div class="get-touch-shape-one">
+        <img src="{% static 'images/get-touch-shape-one.png' %}" alt="Shape">
+    </div>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-xl-6 col-lg-5">
+                <div class="get-in-touch-title-one wow fadeInLeft" data-wow-delay=".4s">
+                    <div class="subtitle">
+                        <div class="subtitle-circle-one"></div>
+                        <h2 class="h2-subtitle-one">{% trans 'Get In Touch' %}</h2>
+                    </div>
+                    <h2 class="h2-title">{% trans 'Get Free SEO Analysis?' %}</h2>
+                    <p>{% trans 'Nunc cursus tortor vel interdum commodo. In euismod maximus imperdiet. Aliquam et justo eu libero sodales imperdiet. Vivamus sit amet lectus quis vitae placerat ligula interdum euismod purus congue facilisis nec ut urna.' %}</p>  
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-7">
+                <div class="get-in-touch-form-one wow fadeInRight" data-wow-delay=".4s">
+                    <form method="POST" action="{% url 'contact' %}">
+                        {% csrf_token %}
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-box-one">
+                                    <input type="text" name="FirstName" class="form-input-one" placeholder="{% trans 'First Name' %}" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-box-one">
+                                    <input type="text" name="LastName" class="form-input-one" placeholder="{% trans 'Last Name' %}" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-box-one">
+                                    <input type="email" name="EmailAddress" class="form-input-one" placeholder="{% trans 'Email Address' %}" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-box-one">
+                                    <input type="text" name="PhoneNo" class="form-input-one" placeholder="{% trans 'Phone No' %}." required>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-box-one">
+                                    <textarea class="form-input-one" placeholder="{% trans 'Message' %}" name="Message"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-box-one mb-0">
+                                    <button type="submit" class="sec-btn-one"><span>{% trans 'Submit Now' %}</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+{% endblock %}

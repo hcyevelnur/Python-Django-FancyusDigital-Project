@@ -1,0 +1,405 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<section class="main-inner-banner-one">
+    <div class="blur-1">
+        <img src="{% static 'images/Blur_1.png' %}" alt="bg blur">
+    </div>
+    <div class="blur-2">
+        <img src="{% static 'images/Blur_2.png' %}" alt="bg blur">
+    </div>
+    <div class="banner-one-shape1 animate-this wow fadeIn" data-wow-delay=".7s"></div>
+    <div class="banner-one-shape2 animate-this wow fadeIn" data-wow-delay=".9s"></div>
+    <div class="banner-one-shape3 animate-this wow fadeIn" data-wow-delay="1s"></div>
+    <div class="banner-one-shape4">
+        <img src="{% static 'images/banner-inner-shape-one.png' %}" alt="shap">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="breadcrum-title-one">
+                    <h1 class="h1-title">Pricing Plan</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="main-pricing-in-one">
+    <div class="pricing-shape-one">
+        <img src="{% static 'images/pricing-shape-one.png' %}" alt="Shape">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                <div class="pricing-box-one wow fadeInUp" data-wow-delay=".4s">
+                    <div class="pricing-blurbg-one">
+                      <img src="{% static 'images/blur_5.png' %}" alt="Blur">  
+                    </div>
+                    <h3 class="h3-title">Classic Plan</h3>
+                    <div class="price-text-one">
+                        <h3 class="h3-title">$29<span>/Month</span></h3>
+                    </div>
+                    <div class="pricing-table-line-one"></div>
+                    <ul>
+                        <li>
+                            <div class="price-point-check-one">
+                                <img src="{% static 'images/check-color.png' %}" class="yes-d-one" alt="Check">
+                                <img src="{% static 'images/check.png' %}" class="no-d-one" alt="Check">
+                            </div>
+                            <p>25 Analytics Campaign</p>
+                        </li>
+                        <li>
+                            <div class="price-point-check-one">
+                                <img src="{% static 'images/check-color.png' %}" class="yes-d-one" alt="Check">
+                                <img src="{% static 'images/check.png' %}" class="no-d-one" alt="Check">
+                            </div>
+                            <p>1,300Change Keywords</p>
+                        </li>
+                        <li>
+                            <div class="price-point-check-one">
+                                <img src="{% static 'images/check-color.png' %}" class="yes-d-one" alt="Check">
+                                <img src="{% static 'images/check.png' %}" class="no-d-one" alt="check">
+                            </div>
+                            <p>25 Social Media Reviews</p>
+                        </li>
+                        <li>
+                            <div class="price-point-check-one">
+                                <img src="{% static 'images/check-color.png' %}" class="yes-d-one" alt="Check">
+                                <img src="{% static 'images/check.png' %}" class="no-d-one" alt="Check">
+                            </div>
+                            <p>1 Free Optimization</p>
+                        </li>
+                        <li>
+                            <div class="price-point-check-one">
+                                <img src="{% static 'images/check-color.png' %}" class="yes-d-one" alt="Check">
+                                <img src="{% static 'images/check.png' %}" class="no-d-one" alt="Check">
+                            </div>
+                            <p>24/7 Support</p>
+                        </li>
+                    </ul>
+                    <a href="{% url 'contact' %}" class="sec-btn-one">Join Now</a>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                <div class="pricing-box-one active wow fadeInDown" data-wow-delay=".4s">
+                    <div class="pricing-blurbg-one">
+                        <img src="{% static 'images/blur_5.png' %}" alt="Blur">  
+                      </div>
+                    <h3 class="h3-title">Popular Plan</h3>
+                    <div class="price-text-one">
+                        <h3 class="h3-title">$39<span>/Month</span></h3>
+                    </div>
+                    <div class="pricing-table-line-one"></div>
+                    <ul>
+                        <li>
+                            <div class="price-point-check-one">
+                                <img src="{% static 'images/check-color.png' %}" class="yes-d-one" alt="Check">
+                                <img src="{% static 'images/check.png' %}" class="no-d-one" alt="Check">
+                            </div>
+                            <p>25 Analytics Campaign</p>
+                        </li>
+                        <li>
+                            <div class="price-point-check-one">
+                                <img src="{% static 'images/check-color.png' %}" class="yes-d-one" alt="Check">
+                                <img src="{% static 'images/check.png' %}" class="no-d-one" alt="Check">
+                            </div>
+                            <p>1,300Change Keywords</p>
+                        </li>
+                        <li>
+                            <div class="price-point-check-one">
+                                <img src="{% static 'images/check-color.png' %}" class="yes-d-one" alt="Check">
+                                <img src="{% static 'images/check.png' %}" class="no-d-one" alt="Check">
+                            </div>
+                            <p>25 Social Media Reviews</p>
+                        </li>
+                        <li>
+                            <div class="price-point-check-one">
+                                <img src="{% static 'images/check-color.png' %}" class="yes-d-one" alt="Check">
+                                <img src="{% static 'images/check.png' %}" class="no-d-one" alt="Check">
+                            </div>
+                            <p>1 Free Optimization</p>
+                        </li>
+                        <li>
+                            <div class="price-point-check-one">
+                                <img src="{% static 'images/check-color.png' %}" class="yes-d-one" alt="Check">
+                                <img src="{% static 'images/check.png' %}" class="no-d-one" alt="Check">
+                            </div>
+                            <p>24/7 Support</p>
+                        </li>
+                    </ul>
+                    <a href="{% url 'contact' %}" class="sec-btn-one">Join Now</a>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                <div class="pricing-box-one wow fadeInUp" data-wow-delay=".4s">
+                    <div class="pricing-blurbg-one">
+                      <img src="{% static 'images/blur_5.png' %}" alt="Blur">  
+                    </div>
+                    <h3 class="h3-title">Standard Plan</h3>
+                    <div class="price-text-one">
+                        <h3 class="h3-title">$49<span>/Month</span></h3>
+                    </div>
+                    <div class="pricing-table-line-one"></div>
+                    <ul>
+                        <li>
+                            <div class="price-point-check-one">
+                                <img src="{% static 'images/check-color.png' %}" class="yes-d-one" alt="Check">
+                                <img src="{% static 'images/check.png' %}" class="no-d-one" alt="Check">
+                            </div>
+                            <p>25 Analytics Campaign</p>
+                        </li>
+                        <li>
+                            <div class="price-point-check-one">
+                                <img src="{% static 'images/check-color.png' %}" class="yes-d-one" alt="Check">
+                                <img src="{% static 'images/check.png' %}" class="no-d-one" alt="Check">
+                            </div>
+                            <p>1,300Change Keywords</p>
+                        </li>
+                        <li>
+                            <div class="price-point-check-one">
+                                <img src="{% static 'images/check-color.png' %}" class="yes-d-one" alt="Check">
+                                <img src="{% static 'images/check.png' %}" class="no-d-one" alt="check">
+                            </div>
+                            <p>25 Social Media Reviews</p>
+                        </li>
+                        <li>
+                            <div class="price-point-check-one">
+                                <img src="{% static 'images/check-color.png' %}" class="yes-d-one" alt="Check">
+                                <img src="{% static 'images/check.png' %}" class="no-d-one" alt="Check">
+                            </div>
+                            <p>1 Free Optimization</p>
+                        </li>
+                        <li>
+                            <div class="price-point-check-one">
+                                <img src="{% static 'images/check-color.png' %}" class="yes-d-one" alt="Check">
+                                <img src="{% static 'images/check.png' %}" class="no-d-one" alt="Check">
+                            </div>
+                            <p>24/7 Support</p>
+                        </li>
+                    </ul>
+                    <a href="{% url 'contact' %}" class="sec-btn-one">Join Now</a>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                <div class="pricing-box-one wow fadeInDown" data-wow-delay=".4s">
+                    <div class="pricing-blurbg-one">
+                      <img src="{% static 'images/blur_5.png' %}" alt="Blur">  
+                    </div>
+                    <h3 class="h3-title">Premium Plan</h3>
+                    <div class="price-text-one">
+                        <h3 class="h3-title">$59<span>/Month</span></h3>
+                    </div>
+                    <div class="pricing-table-line-one"></div>
+                    <ul>
+                        <li>
+                            <div class="price-point-check-one">
+                                <img src="{% static 'images/check-color.png' %}" class="yes-d-one" alt="Check">
+                                <img src="{% static 'images/check.png' %}" class="no-d-one" alt="Check">
+                            </div>
+                            <p>25 Analytics Campaign</p>
+                        </li>
+                        <li>
+                            <div class="price-point-check-one">
+                                <img src="{% static 'images/check-color.png' %}" class="yes-d-one" alt="Check">
+                                <img src="{% static 'images/check.png' %}" class="no-d-one" alt="Check">
+                            </div>
+                            <p>1,300Change Keywords</p>
+                        </li>
+                        <li>
+                            <div class="price-point-check-one">
+                                <img src="{% static 'images/check-color.png' %}" class="yes-d-one" alt="Check">
+                                <img src="{% static 'images/check.png' %}" class="no-d-one" alt="check">
+                            </div>
+                            <p>25 Social Media Reviews</p>
+                        </li>
+                        <li>
+                            <div class="price-point-check-one">
+                                <img src="{% static 'images/check-color.png' %}" class="yes-d-one" alt="Check">
+                                <img src="{% static 'images/check.png' %}" class="no-d-one" alt="Check">
+                            </div>
+                            <p>1 Free Optimization</p>
+                        </li>
+                        <li>
+                            <div class="price-point-check-one">
+                                <img src="{% static 'images/check-color.png' %}" class="yes-d-one" alt="Check">
+                                <img src="{% static 'images/check.png' %}" class="no-d-one" alt="Check">
+                            </div>
+                            <p>24/7 Support</p>
+                        </li>
+                    </ul>
+                    <a href="{% url 'contact' %}" class="sec-btn-one">Join Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="main-newsletter-one">
+    <div class="newsletter-blur1-one">
+        <img src="{% static 'images/blur_4.png' %}" alt="Blur">
+    </div>
+    <div class="newsletter-blur2-one">
+        <img src="{% static 'images/blur_4.png' %}" alt="Blur">
+    </div>
+    <div class="newsletter-one-shape1 animate-this wow fadeIn" data-wow-delay=".6s"></div>
+    <div class="newsletter-one-shape2 animate-this wow fadeIn" data-wow-delay=".6s"></div>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="newsletter-title-one wow fadeInLeft" data-wow-delay=".4s">
+                    <div class="newsletter-icon-one">
+                        <img src="{% static 'images/newsletter-icon.png' %}" alt="Icon">
+                    </div>
+                    <h2 class="h2-title">Get Latest Update Of Marketing Ideas</h2>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="newsletter-form-one wow fadeInRight" data-wow-delay=".4s">
+                    <input type="email" name="email" class="form-input-one subscribe-input" placeholder="Email Address..." required>
+                    <button type="submit" class="sec-btn-one">Subscribe Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="main-testimonial-one">
+    <div class="testimonial-shape-one">
+        <img src="{% static 'images/testimonial-shape-one.png' %}" alt="Shape">
+    </div>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-4">
+                <div class="testimonial-content-box-one wow fadeInLeft" data-wow-delay=".4s">
+                    <div class="testimonial-title-one">
+                        <div class="subtitle">
+                            <div class="subtitle-circle-one"></div>
+                            <h2 class="h2-subtitle-one">Testimonial</h2>
+                        </div>
+                        <h2 class="h2-title">What Our Client Say</h2>   
+                    </div>
+                    <p>In tincidunt eleifend libero, tempor dignissim ex placerat in. Nam ultricies posuere sodales. Cras lacus odio, elementum vel viverra non.</p>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <div class="testimonial-main-box-one wow fadeInRight" data-wow-delay=".4s">
+                    <div class="row testimonial-slider-one">
+                        <div class="col-lg-6">
+                            <div class="testimonial-box-one">
+                                <div class="testimonial-quote-one">
+                                    <img src="{% static 'images/quote-one.png' %}" alt="Quote">
+                                </div>
+                                <div class="testimonial-client-box-one">
+                                    <div class="testimonial-client-img-one">
+                                        <img src="{% static 'images/client1-one.jpg' %}" class="rounded-circle" alt="Client">
+                                    </div>
+                                    <div class="testimonial-client-name-one">
+                                        <h3 class="h3-title">Jina Nilson</h3>
+                                        <span>CEO Company</span>
+                                    </div>
+                                </div>
+                                <p>&ldquo;Phasellus aliquam quis lorem amet dapibus feugiat vitae purus vitae efficitur. Vestibulum sed elit id orci rhoncus ultricies. Morbi vitae semper dapibus vitae purus eget quam&rdquo;.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="testimonial-box-one">
+                                <div class="testimonial-quote-one">
+                                    <img src="{% static 'images/quote-one.png' %}" alt="Quote">
+                                </div>
+                                <div class="testimonial-client-box-one">
+                                    <div class="testimonial-client-img-one">
+                                        <img src="{% static 'images/client2-one.jpg' %}" class="rounded-circle" alt="Client">
+                                    </div>
+                                    <div class="testimonial-client-name-one">
+                                        <h3 class="h3-title">Jina Nilson</h3>
+                                        <span>CEO Company</span>
+                                    </div>
+                                </div>
+                                <p>&ldquo;Phasellus aliquam quis lorem amet dapibus feugiat vitae purus vitae efficitur. Vestibulum sed elit id orci rhoncus ultricies. Morbi vitae semper dapibus vitae purus eget quam&rdquo;.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="testimonial-box-one">
+                                <div class="testimonial-quote-one">
+                                    <img src="{% static 'images/quote-one.png' %}" alt="Quote">
+                                </div>
+                                <div class="testimonial-client-box-one">
+                                    <div class="testimonial-client-img-one">
+                                        <img src="{% static 'images/client3-one.jpg' %}" class="rounded-circle" alt="Client">
+                                    </div>
+                                    <div class="testimonial-client-name-one">
+                                        <h3 class="h3-title">Jina Nilson</h3>
+                                        <span>CEO Company</span>
+                                    </div>
+                                </div>
+                                <p>&ldquo;Phasellus aliquam quis lorem amet dapibus feugiat vitae purus vitae efficitur. Vestibulum sed elit id orci rhoncus ultricies. Morbi vitae semper dapibus vitae purus eget quam&rdquo;.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="main-get-in-touch-one">
+    <div class="get-touch-shape-one">
+        <img src="{% static 'images/get-touch-shape-one.png' %}" alt="Shape">
+    </div>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="get-in-touch-title-one wow fadeInLeft" data-wow-delay=".4s">
+                    <div class="subtitle">
+                        <div class="subtitle-circle-one"></div>
+                        <h2 class="h2-subtitle-one">Get In Touch</h2>
+                    </div>
+                    <h2 class="h2-title">Get Free SEO Analysis?</h2>
+                    <p>Nunc cursus tortor vel interdum commodo. In euismod maximus imperdiet. Aliquam et justo eu libero sodales imperdiet. Vivamus sit amet lectus quis vitae placerat ligula interdum euismod purus congue facilisis nec ut urna.</p>  
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="get-in-touch-form-one wow fadeInRight" data-wow-delay=".4s">
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-box-one">
+                                    <input type="text" name="FirstName" class="form-input-one" placeholder="First Name" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-box-one">
+                                    <input type="text" name="LastName" class="form-input-one" placeholder="Last Name" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-box-one">
+                                    <input type="email" name="EmailAddress" class="form-input-one" placeholder="Email Address" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-box-one">
+                                    <input type="text" name="PhoneNo" class="form-input-one" placeholder="Phone No." required>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-box-one">
+                                    <textarea class="form-input-one" placeholder="Message..."></textarea>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-box-one mb-0">
+                                    <button type="submit" class="sec-btn-one"><span>Submit Now</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

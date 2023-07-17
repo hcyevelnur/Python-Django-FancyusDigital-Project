@@ -1,0 +1,677 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+{% load i18n %}
+
+<!-- <section class="main-banner-one">
+    <div class="blur-1">
+        <img src="{% static 'images/Blur_1.png' %}" alt="bg blur">
+    </div>
+    <div class="blur-2">
+        <img src="{% static 'images/Blur_2.png' %}" alt="bg blur">
+    </div>
+    <div class="banner-one-shape1 animate-this wow fadeIn" data-wow-delay=".7s"></div>
+    <div class="banner-one-shape2 animate-this wow fadeIn" data-wow-delay=".9s"></div>
+    <div class="banner-one-shape3 animate-this wow fadeIn" data-wow-delay="1s"></div>
+    <div class="banner-one-shape4">
+        <img src="{% static 'images/banner-one-shap4.png' %}" alt="shap">
+    </div>
+    <div class="banner-mob-one wow fadeIn" data-wow-delay=".5s">
+        <img src="{% static 'images/banner-mob-one.jpg' %}" alt="Banner">
+    </div>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="banner-content-one">
+                    <h1 style="margin-top: -100px;" class="h1-title wow fadeInUp typing-effect"></h1>
+                    <p class="wow fadeInUp" data-wow-delay=".7s">We are a leading digital solutions company based in the United States. Our goal is to help businesses thrive in the digital landscape through our comprehensive range of services.</p>
+                    <div class="banner-slide-text">
+                        <p class="wow fadeInDown" data-wow-delay=".5s">Welcome to Fancyus Digital!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 banner-mob-no-one">
+                <div class="banner-img-box">
+                    <div class=" wow fadeInRight" data-wow-delay=".5s">
+                        <img src="{% static 'images/fancylogo_1.png' %}" class="rounded-circle" alt="Banner">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="banner-video-box wow fadeInLeft" data-wow-delay=".6s">
+        <div class="banner-video-img">
+            <img src="{% static 'images/banner-video.jpg' %}" alt="video">
+            <div class="banner-play-btn">
+                <a href="https://www.youtube.com/watch?v=yUwpx81trCo" class="banner-play-icon popup-youtube" title="Play Video"><span><i class="fa fa-play" aria-hidden="true"></i></span></a>
+            </div>
+        </div>
+        <div class="banner-video-content">
+            <a href="d">{% trans 'Watch More' %}<i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+        </div>
+    </div>
+</section> -->
+
+<section class="main-banner-two">
+    <div class="banner-overlay-two">
+        <img src="{% static 'images/overlay-two.png' %}" alt="">
+    </div>
+    <div class="banner-bgoverlay-two">
+        <img src="{% static 'images/banner-bgoverlay-two.png' %}" alt="">
+    </div>
+    <div class="banner-line1-two">
+        <img src="{% static 'images/banner-line1-two.png' %}" alt="">
+    </div>
+    <div class="banner-line2-two">
+        <img src="{% static 'images/banner-line2-two.png' %}" alt="">
+    </div>
+    <div class="banner-shape1-two animate-this wow fadeInLeftBig" data-wow-delay=".8s">
+        <img src="{% static 'images/banner-shape1-two.png' %}" alt="">
+    </div>
+    <div class="banner-shape2-two animate-this wow fadeInUpBig" data-wow-delay=".9s">
+        <img src="{% static 'images/banner-shape2-two.png' %}" alt="">
+    </div>
+   <div class="container">
+      <div class="row align-items-center">
+         <div class="col-lg-6">
+            <div class="banner-content-two">
+               <div class="subtitle wow fadeInUp" data-wow-delay=".5s">
+                  <div class="subtitle-line-two"></div>
+                  <h2 class="h2-subtitle-two">{% trans 'Welcome to Fancyus Digital!' %}</h2>
+               </div>
+               <h1 class="h1-title wow fadeInUp typing-effect" data-wow-delay=".7s"></h1>
+               <p class="wow fadeInUp" data-wow-delay=".9s">{% trans 'We are a leading digital solutions company based in the United States. Our goal is to help businesses thrive in the digital landscape through our comprehensive range of services.' %}</p>
+            </div>
+         </div>
+         <div class="col-lg-6">
+            <div class="banner-img-two wow fadeInRight" data-wow-delay=".5s">
+               <img src="{% static 'images/banner-img-part1-two.png' %}" class="banner-img-part2-two" alt="">
+               <img src="{% static 'images/banner-img-part2-two.png' %}"  alt="">
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+
+{% comment %}
+<!-- <div class="main-partner-logo-one wow fadeInUp" data-wow-delay=".4s">
+    <div class="container">
+        <div class="row partners-slider">
+            <div class="col-lg-2">
+                <div class="partner-logo-box">
+                    <img src="{% static 'images/brand1.png' %}" class="partner-overlay" alt="brand">
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <div class="partner-logo-box">
+                    <img src="{% static 'images/brand2.png' %}" class="partner-overlay" alt="brand">
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <div class="partner-logo-box">
+                    <img src="{% static 'images/brand3.png' %}" class="partner-overlay" alt="brand">
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <div class="partner-logo-box">
+                    <img src="{% static 'images/brand4.png' %}" class="partner-overlay" alt="brand">
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <div class="partner-logo-box">
+                    <img src="{% static 'images/brand5.png' %}" class="partner-overlay" alt="brand">
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <div class="partner-logo-box">
+                    <img src="{% static 'images/brand6.png' %}" class="partner-overlay" alt="brand">
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <div class="partner-logo-box">
+                    <img src="{% static 'images/brand3.png' %}" class="partner-overlay" alt="brand">
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<!-- <section class="main-about-us-one">
+    <div class="about-shape-one">
+        <img src="{% static 'images/about-shape-one.png' %}" alt="shape">
+    </div>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="about-img-box-one wow fadeInLeft" data-wow-delay=".4s">
+                    <div class="about-img1-one">
+                        <img src="{% static 'images/about-img-one1.png' %}" alt="about us">
+                    </div>
+                    <div class="about-text-img1-one">
+                        <img src="{% static 'images/about-text-img-one.png' %}" alt="about us">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="about-content-one wow fadeInRight" data-wow-delay=".4s">
+                    <div class="about-title-one">
+                        <div class="subtitle">
+                            <div class="subtitle-circle-one"></div>
+                            <h2 class="h2-subtitle-one">About Us</h2>
+                        </div>
+                        <h2 class="h2-title">Grow Business With Marketing</h2>
+                    </div>
+                    <p>Nulla consequat finibus risus, eu tincidunt sapien pharetra non. Sed arcu turpis, varius et magna sed, malesuada vestibulum ligula. Mauris dignissim lectus quis arcu aliquam eleifend maximus ligula, sit amet elementum mauris facilisis in rutrum.</p>
+                    <div class="points-one">
+                        <ul>
+                            <li>
+                                <div class="check-list">
+                                    <img src="{% static 'images/check.png' %}" alt="check">
+                                </div>
+                                <p>Quisque condimentum fringilla justo eu maximus. Pellentesque pharetra convallis tortor et finibus.</p>
+                            </li>
+                            <li>
+                                <div class="check-list">
+                                    <img src="{% static 'images/check.png' %}" alt="check">
+                                </div>
+                                <p>Quisque condimentum fringilla justo eu maximus. Pellentesque pharetra convallis tortor et finibus.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="google-rating">
+                        <div class="google-rating-content">
+                            <div class="google-icon">
+                                <img src="{% static 'images/google.png' %}" alt="Google Rating">
+                            </div>
+                            <div class="google-rating-text">
+                                <span>Google Rating</span>
+                                <div class="google-star-rating">
+                                    <p>4.9</p>
+                                <ul>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+{% endcomment %}
+
+<section class="main-services-one">
+    <div class="service-shape-one">
+        <img src="{% static 'images/service-shape-one.png' %}" alt="Shape">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="service-title-one">
+                    <div class="subtitle">
+                        <div class="subtitle-circle-one"></div>
+                        <h2 class="h2-subtitle-one">{% trans "Our Services" %}</h2>
+                        <div class="subtitle-circle2-one"></div>
+                    </div>
+                    <h2 class="h2-title">{% trans 'Best Services For Business' %}</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            {% for service in services %}
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
+                <div class="service-box-one wow fadeInUp" data-wow-delay=".4s">
+                    <div class="service-boxbg-shape-one">
+                        <img src="{% static 'images/blur_3.png' %}" alt="Blur">
+                    </div>
+                    <div class="service-icon-one">
+                        <img src="{{ service.image.url }}" class="yes-d-one" alt="Icon">
+                        <img src="{{ service.image2.url }}" class="no-d-one" alt="Icon">
+                    </div>
+                    <div class="service-box-content-one">
+                        <a href="{% url 'service-detail' pk=service.pk %}"><h3 class="h3-title">{{ service.title }}</h3></a>
+                        <p>{{ service.description }}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section class="main-portfolio-one">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-7">
+                <div class="portfolio-title-one">
+                    <div class="subtitle">
+                        <div class="subtitle-circle-one"></div>
+                        <h2 class="h2-subtitle-one">{% trans 'Recent Portfolio' %}</h2>
+                    </div>
+                    <h2 class="h2-title">{% trans 'Our Latest Case Studies' %}</h2>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="portfolio-btn-one">
+                    <a href="{% url 'portfolio' %}" class="sec-btn-one">{% trans 'View All Portfolio' %}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid side-p">
+        <div class="portfolio-shape-one">
+            <img src="{% static 'images/portfolio-shape-one.png' %}" alt="Shape">
+        </div>
+        <div class="row portfolio-slider-one">
+            {% for portfolio in portfolios %}
+            {% if forloop.counter <= 4 %}
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                <div class="portfolio-box-one wow fadeInUp" data-wow-delay=".4s">
+                    <img src="{{portfolio.image_1.url}}" class="mob-no-one" alt="Portfolio">
+                    <img src="{{portfolio.image_22.url}}" class="dec-no-one" alt="">
+                    <div class="portfolio-hover-one">
+                        {% if portfolio.title %}
+                        <a href="{% url 'portfolio-detail' pk=portfolio.pk %}">
+                        {% endif %}    <h3 class="h3-title">{{portfolio.portifolio_name}}</h3></a>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+        
+    </div>
+</section>
+
+<section class="main-newsletter-one">
+    <div class="newsletter-blur1-one">
+        <img src="{% static 'images/blur_4.png' %}" alt="Blur">
+    </div>
+    <div class="newsletter-blur2-one">
+        <img src="{% static 'images/blur_4.png' %}" alt="Blur">
+    </div>
+    <div class="newsletter-one-shape1 animate-this wow fadeIn" data-wow-delay=".6s"></div>
+    <div class="newsletter-one-shape2 animate-this wow fadeIn" data-wow-delay=".6s"></div>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="newsletter-title-one wow fadeInLeft" data-wow-delay=".4s">
+                    <div class="newsletter-icon-one">
+                        <img src="{% static 'images/newsletter-icon.png' %}" alt="Icon">
+                    </div>
+                    <h2 class="h2-title">{% trans 'Get Latest Update Of Marketing Ideas' %}</h2>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <form action="" method="POST">
+                    {% csrf_token %}
+                <div class="newsletter-form-one wow fadeInRight" data-wow-delay=".4s">
+                        <input type="email" name="EmailAddress" class="form-input-one subscribe-input" placeholder="{% trans 'Email Address...' %}" required>
+                        <button type="submit" class="sec-btn-one">{% trans 'Subscribe Now' %}</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% comment %}
+<!-- <section class="main-pricing-table-one">
+    <div class="pricing-shape-one">
+        <img src="{% static 'images/pricing-shape-one.png' %}" alt="Shape">
+    </div>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-xl-6 col-lg-7 col-md-12">
+                <div class="main-pricing-box-one">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="pricing-box-one wow fadeInUp" data-wow-delay=".4s">
+                                <div class="pricing-blurbg-one">
+                                  <img src="{% static 'images/blur_5.png' %}" alt="Blur">  
+                                </div>
+                                <h3 class="h3-title">Classic Plan</h3>
+                                <div class="price-text-one">
+                                    <h3 class="h3-title">$29<span>/Month</span></h3>
+                                </div>
+                                <div class="pricing-table-line-one"></div>
+                                <ul>
+                                    <li>
+                                        <div class="price-point-check-one">
+                                            <img src="{% static 'images/check-color.png' %}" class="yes-d-one" alt="Check">
+                                            <img src="{% static 'images/check.png' %}" class="no-d-one" alt="Check">
+                                        </div>
+                                        <p>25 Analytics Campaign</p>
+                                    </li>
+                                    <li>
+                                        <div class="price-point-check-one">
+                                            <img src="{% static 'images/check-color.png' %}" class="yes-d-one" alt="Check">
+                                            <img src="{% static 'images/check.png' %}" class="no-d-one" alt="Check">
+                                        </div>
+                                        <p>1,300Change Keywords</p>
+                                    </li>
+                                    <li>
+                                        <div class="price-point-check-one">
+                                            <img src="{% static 'images/check-color.png' %}" class="yes-d-one" alt="Check">
+                                            <img src="{% static 'images/check.png' %}" class="no-d-one" alt="check">
+                                        </div>
+                                        <p>25 Social Media Reviews</p>
+                                    </li>
+                                    <li>
+                                        <div class="price-point-check-one">
+                                            <img src="{% static 'images/check-color.png' %}" class="yes-d-one" alt="Check">
+                                            <img src="{% static 'images/check.png' %}" class="no-d-one" alt="Check">
+                                        </div>
+                                        <p>1 Free Optimization</p>
+                                    </li>
+                                    <li>
+                                        <div class="price-point-check-one">
+                                            <img src="{% static 'images/check-color.png' %}" class="yes-d-one" alt="Check">
+                                            <img src="{% static 'images/check.png' %}" class="no-d-one" alt="Check">
+                                        </div>
+                                        <p>24/7 Support</p>
+                                    </li>
+                                </ul>
+                                <a href="{% url 'contact' %}" class="sec-btn-one">Join Now</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="pricing-box-one active price-margin-one wow fadeInDown" data-wow-delay=".4s">
+                                <div class="pricing-blurbg-one">
+                                    <img src="{% static 'images/blur_5.png' %}" alt="Blur">  
+                                  </div>
+                                <h3 class="h3-title">Popular Plan</h3>
+                                <div class="price-text-one">
+                                    <h3 class="h3-title">$39<span>/Month</span></h3>
+                                </div>
+                                <div class="pricing-table-line-one"></div>
+                                <ul>
+                                    <li>
+                                        <div class="price-point-check-one">
+                                            <img src="{% static 'images/check-color.png' %}" class="yes-d-one" alt="Check">
+                                            <img src="{% static 'images/check.png' %}" class="no-d-one" alt="Check">
+                                        </div>
+                                        <p>25 Analytics Campaign</p>
+                                    </li>
+                                    <li>
+                                        <div class="price-point-check-one">
+                                            <img src="{% static 'images/check-color.png' %}" class="yes-d-one" alt="Check">
+                                            <img src="{% static 'images/check.png' %}" class="no-d-one" alt="Check">
+                                        </div>
+                                        <p>1,300Change Keywords</p>
+                                    </li>
+                                    <li>
+                                        <div class="price-point-check-one">
+                                            <img src="{% static 'images/check-color.png' %}" class="yes-d-one" alt="Check">
+                                            <img src="{% static 'images/check.png' %}" class="no-d-one" alt="Check">
+                                        </div>
+                                        <p>25 Social Media Reviews</p>
+                                    </li>
+                                    <li>
+                                        <div class="price-point-check-one">
+                                            <img src="{% static 'images/check-color.png' %}" class="yes-d-one" alt="Check">
+                                            <img src="{% static 'images/check.png' %}" class="no-d-one" alt="Check">
+                                        </div>
+                                        <p>1 Free Optimization</p>
+                                    </li>
+                                    <li>
+                                        <div class="price-point-check-one">
+                                            <img src="{% static 'images/check-color.png' %}" class="yes-d-one" alt="Check">
+                                            <img src="{% static 'images/check.png' %}" class="no-d-one" alt="Check">
+                                        </div>
+                                        <p>24/7 Support</p>
+                                    </li>
+                                </ul>
+                                <a href="{% url 'contact' %}" class="sec-btn-one">Join Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-5 col-md-12">
+                <div class="pricing-table-content-one wow fadeInRight" data-wow-delay=".4s">
+                    <div class="pricing-table-title-one">
+                        <div class="subtitle">
+                            <div class="subtitle-circle-one"></div>
+                            <h2 class="h2-subtitle-one">Choose Your Plan</h2>
+                        </div>
+                        <h2 class="h2-title">Our Pricing Plan</h2>
+                    </div>
+                    <p>Integer rhoncus molestie nunc, vel commodo orci iaculis eget. Mauris pulvinar scelerisque turpis, sed ullamcorper sapien interdum nec. Nulla sed dui sed ligula elementum viverra vel in pulvinar arcu tellus, egestas luctus odio maximus at libero.</p>
+                    <p>Donec condimentum, felis sit amet fermentum sagittis, metus mi tempus lorem, vel auctor quam urna in nulla.</p>
+                    <div class="pricing-counter-box-one">
+                        <div class="row" id="counter">
+                            <div class="col-xl-4 col-lg-6 col-md-4 col-sm-4 col-5">
+                                <div class="pricing-counter-content-one">
+                                    <div class="pricing-count-text">
+                                        <h3 class="h3-title counting-data" data-count="7846">0</h3><span>+</span>
+                                    </div>
+                                    <p>Happy Clients</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-6 col-md-4 col-sm-4 col-5">
+                                <div class="pricing-counter-content-one">
+                                    <div class="pricing-count-text">
+                                        <h3 class="h3-title counting-data" data-count="9874">0</h3><span>+</span>
+                                    </div>
+                                    <p>Monthly Website Visits</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+{% endcomment %}
+
+<section class="main-team-one">
+    <div class="team-shape-one">
+        <img src="{% static 'images/service-shape-one.png' %}" alt="Shape">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="team-title-one">
+                    <div class="subtitle">
+                        <div class="subtitle-circle-one"></div>
+                        <h2 class="h2-subtitle-one">{% trans 'Our Specialists' %}</h2>
+                        <div class="subtitle-circle2-one"></div>
+                    </div>
+                    <h2 class="h2-title">{% trans 'Our team' %}</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row team-slider wow fadeInUp" data-wow-delay=".4s">
+            {% for teamm in teams %}
+            <div class="col-lg-3">
+                <div class="team-box-one">
+                    <div class="team-img-box-one">
+                        <div class="team-img-one">
+                            <img src="{{teamm.image_1.url}}" class="rounded-circle" alt="Member">
+                        </div>
+                    </div>
+                    <div class="team-content-box-one">
+                        <a href="{% url 'team-detail' pk=teamm.pk %}"><h3 class="h3-title">{{teamm.name}}</h3></a>
+                        <span>{{teamm.work}}</span>
+                        <div class="team-social-one">
+                            <ul>
+                                <li>
+                                    {% if teamm.facebook %}
+                                    <a target="_blank" href="{{ teamm.facebook }}"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                    {% endif %}
+                                </li>
+                                <li>
+                                    {% if teamm.instagram %}
+                                    <a target="_blank" href="{{ teamm.instagram }}"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                    {% endif %}
+                                </li>
+                                <li>
+                                    {% if teamm.twitter %}
+                                    <a target="_blank" href="{{ teamm.twitter }}"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                    {% endif %}
+                                </li>
+                                <li>
+                                    {% if teamm.youtube %}
+                                    <a target="_blank" href="{{ teamm.youtube }}"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                                    {% endif %}
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+    </div>
+</section>
+
+<section class="main-testimonial-one">
+    <div class="testimonial-shape-one">
+        <img src="{% static 'images/testimonial-shape-one.png' %}" alt="Shape">
+    </div>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-4">
+                <div class="testimonial-content-box-one wow fadeInLeft" data-wow-delay=".4s">
+                    <div class="testimonial-title-one">
+                        <div class="subtitle">
+                            <div class="subtitle-circle-one"></div>
+                            <h2 class="h2-subtitle-one">{% trans 'Testimonial' %}</h2>
+                        </div>
+                        <h2 class="h2-title">{% trans 'What Our Client Say' %}</h2>   
+                    </div>
+                    <p>{% trans 'The level of expertise and attention to detail showcased by Fanyus Digital is truly impressive.' %}</p>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <div class="testimonial-main-box-one wow fadeInRight" data-wow-delay=".4s">
+                    <div class="row testimonial-slider-one">
+                        {% for tes in teslimation %}
+                        <div class="col-lg-6">
+                            <div class="testimonial-box-one">
+                                <div class="testimonial-quote-one">
+                                    <img src="{% static 'images/quote-one.png' %}" alt="Quote">
+                                </div>
+                                <div class="testimonial-client-box-one">
+                                    <div class="testimonial-client-img-one">
+                                        <img src="{{tes.image_1.url}}" class="rounded-circle" alt="Client">
+                                    </div>
+                                    <div class="testimonial-client-name-one">
+                                        <h3 class="h3-title">{{tes.name}}</h3>
+                                        <span>{{tes.work}}</span>
+                                    </div>
+                                </div>
+                                <p>&ldquo;{{tes.description}}&rdquo;.</p>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="main-get-in-touch-one">
+    <div class="get-touch-shape-one">
+        <img src="{% static 'images/get-touch-shape-one.png' %}" alt="Shape">
+    </div>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="get-in-touch-title-one wow fadeInLeft" data-wow-delay=".4s">
+                    <div class="subtitle">
+                        <div class="subtitle-circle-one"></div>
+                        <h2 class="h2-subtitle-one">{% trans 'Get In Touch' %}</h2>
+                    </div>
+                    <h2 class="h2-title">{% trans 'Get Free SEO Analysis?' %}</h2>
+                    <p>{% trans 'Nunc cursus tortor vel interdum commodo. In euismod maximus imperdiet. Aliquam et justo eu libero sodales imperdiet. Vivamus sit amet lectus quis vitae placerat ligula interdum euismod purus congue facilisis nec ut urna.' %}</p>  
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="get-in-touch-form-one wow fadeInRight" data-wow-delay=".4s">
+                    <form method="post">
+                        {% csrf_token %}
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-box-one">
+                                    <input type="text" name="FirstName" class="form-input-one" placeholder="{% trans 'First Name' %}" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-box-one">
+                                    <input type="text" name="LastName" class="form-input-one" placeholder="{% trans 'Last Name' %}" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-box-one">
+                                    <input type="email" name="EmailAddress" class="form-input-one" placeholder="{% trans 'Email Address' %}" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-box-one">
+                                    <input type="text" name="PhoneNo" class="form-input-one" placeholder="{% trans 'Phone No.' %}" required>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-box-one">
+                                    <textarea class="form-input-one" placeholder="{% trans 'Message' %}" name="Message"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-box-one mb-0">
+                                    <button type="submit" class="sec-btn-one"><span>{% trans 'Submit Now' %}</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    const texts = ["{% trans 'Welcome to Fancyus Digital' %}", "{% trans 'We Help Grow Your Idea' %}", "{% trans 'We Help Grow Your Brand' %}"];
+    let textIndex = 0;
+    let letterIndex = 0;
+    let isDeleting = false;
+
+    function typeEffect() {
+        const text = texts[textIndex];
+        const typingElement = document.querySelector('.typing-effect');
+
+        if (isDeleting) {
+            typingElement.textContent = text.slice(0, letterIndex);
+            letterIndex--;
+        } else {
+            typingElement.textContent = text.slice(0, letterIndex);
+            letterIndex++;
+        }
+
+        if (!isDeleting && letterIndex === text.length) {
+            isDeleting = true;
+            setTimeout(typeEffect, 1000);
+        } else if (isDeleting && letterIndex === 0) {
+            isDeleting = false;
+            textIndex++;
+            if (textIndex >= texts.length) {
+                textIndex = 0;
+            }
+            setTimeout(typeEffect, 500);
+        } else {
+            setTimeout(typeEffect, 100);
+        }
+    }
+
+    typeEffect();
+</script>
+{% endblock %}

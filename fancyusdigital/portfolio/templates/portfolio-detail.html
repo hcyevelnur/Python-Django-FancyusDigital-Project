@@ -1,0 +1,131 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+{% load i18n %}
+
+<section class="main-inner-banner-one">
+    <div class="blur-1">
+        <img src="{% static 'images/Blur_1.png' %}" alt="bg blur">
+    </div>
+    <div class="blur-2">
+        <img src="{% static 'images/Blur_2.png' %}" alt="bg blur">
+    </div>
+    <div class="banner-one-shape1 animate-this wow fadeIn" data-wow-delay=".7s"></div>
+    <div class="banner-one-shape2 animate-this wow fadeIn" data-wow-delay=".9s"></div>
+    <div class="banner-one-shape3 animate-this wow fadeIn" data-wow-delay="1s"></div>
+    <div class="banner-one-shape4">
+        <img src="{% static 'images/banner-inner-shape-one.png' %}" alt="shap">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="breadcrum-title-one">
+                    <h1 class="h1-title">{{portfolio.portifolio_name}}</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="main-portfolio-detail-one">
+    <div class="portfolio-detail-shape1-one">
+        <img src="{% static 'images/portfolio-detail-shape1-one.png' %}" alt="Shape">
+    </div>
+    <div class="portfolio-detail-shape2-one">
+        <img src="{% static 'images/portfolio-detail-shape2-one.png' %}" alt="Shape">
+    </div>
+    <div class="portfolio-detail-shape3-one">
+        <img src="{% static 'images/portfolio-detail-shape1-one.png' %}" alt="Shape">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="portfolio-detail-img-one wow fadeInUp" data-wow-delay=".4s">
+                    <img src="{{portfolio.image_1.url}}" alt="Portfolio">
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-text-info-box-one">
+            <div class="row">
+                <div class="col-xl-8 col-lg-7">
+                    <h2 class="h2-title">{{portfolio.title}}</h2>
+                    <p>{{portfolio.description}}</p>
+                </div>
+                <div class="col-xl-4 col-lg-5">
+                    <div class="portfolio-detail-info-box-one">
+                        <div class="portfolio-detail-info-blur1">
+                            <img src="{% static 'images/blur_9.png' %}" alt="Blur">
+                        </div>
+                        <div class="portfolio-detail-info-blur2">
+                            <img src="{% static 'images/blur_9.png' %}" alt="Blur">
+                        </div>
+                        <h3 class="h3-title">{% trans 'Project Infomation' %}</h3>
+                        <div class="line"></div>
+                        <ul>
+                            <li>
+                                <span>{% trans 'Client Name:' %}</span>
+                                <span>{{portfolio.client_name}}</span>
+                            </li>
+                            <li>
+                                <span>{% trans 'Date:' %}</span>
+                                <span>{{portfolio.date}}</span>
+                            </li>
+                            <li>
+                                <span>{% trans 'Website:' %}</span>
+                                <span>{{portfolio.website}}</span>
+                            </li>
+                            <li>
+                                <span>{% trans 'Category:' %}</span>
+                                <span>{{portfolio.category}}</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+<br>
+<br>
+<br>
+<br>
+        <div class="row">
+            <div class="col-lg-12">
+                <h3 class="h3-title">{{portfolio.title_1}}</h3>
+                <p>{{portfolio.description_3}}</p>
+            </div>
+            <div class="col-lg-4">
+                <div class="portfolio-detail-service-box-one wow fadeInUp" data-wow-delay=".4s">
+                    <div class="portfolio-detail-service-icon-one">
+                        <img src="{% static 'images/portfolio-detail-service-icon1-one.png' %}" alt="Icon">
+                    </div>
+                    <div class="portfolio-detail-service-content-one">
+                        <h3 class="h3-title">{% trans 'Onsite SEO' %}</h3>
+                        <p>{% trans 'Fusce blandit felis mollis arcu blandit pulvinar.' %}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="portfolio-detail-service-box-one wow fadeInDown" data-wow-delay=".4s">
+                    <div class="portfolio-detail-service-icon-one">
+                        <img src="{% static 'images/portfolio-detail-service-icon2-one.png' %}" alt="Icon">
+                    </div>
+                    <div class="portfolio-detail-service-content-one">
+                        <h3 class="h3-title">{% trans 'Mobile SEO' %}</h3>
+                        <p>{% trans 'Fusce blandit felis mollis arcu blandit pulvinar.' %}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="portfolio-detail-service-box-one portfolio-mb wow fadeInUp" data-wow-delay=".4s">
+                    <div class="portfolio-detail-service-icon-one">
+                        <img src="{% static 'images/portfolio-detail-service-icon3-one.png' %}" alt="Icon">
+                    </div>
+                    <div class="portfolio-detail-service-content-one">
+                        <h3 class="h3-title">{% trans 'Technical SEO' %}</h3>
+                        <p>{% trans 'Fusce blandit felis mollis arcu blandit pulvinar.' %}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
